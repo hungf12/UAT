@@ -68,4 +68,4 @@ if status == True:
             print("Contains no keywords")
         print()
 else:
-    print("Audio file does not exist")
+    print("Audio file does not exits")
