@@ -1,78 +1,61 @@
-import json
+def extract_surrounding_text(keyword, data, context_size=3):
+    result = []
 
-# Path to the JSON Transcript file
-file_path = 'C:/Users/Admin/Downloads/FEC_CLX/transcript/fec_clx_500_clean.json'
+    for record in data:
+        content = record['content']
+        for i, entry in enumerate(content):
+            if keyword in entry['text']:
+                start = max(0, i - context_size)
+                end = min(len(content), i + context_size + 1)
+                surrounding_text = content[start:end]
+                result.append({
+                    "name": record['name'],
+                    "surrounding_text": surrounding_text
+                })
+                break  # Assuming one match per record for simplicity
 
-# Read the JSON Transcript file
-with open(file_path, 'r', encoding='utf-8') as file:
-    data = json.load(file)
+    return result
 
-# Path to the JSON Data KeyWord Motivation file
-file_path_motivation = 'C:/Users/Admin/Downloads/FEC_CLX/transcript/data_kw_motivation.json'
-# Read the JSON Data KeyWord Motivation file
-with open(file_path_motivation, 'r', encoding='utf-8') as file:
-    json_data = json.load(file)
-
-# Print the contents of the JSON file
-#print(data)
-
-
-def check_audio_file_content(audio_id):
-    for audio in data:
-        if audio['name'] == audio_id:
-            return audio['content']
-    return None
-
-# Check content for the specified audio file
-#audio_id = "R7QO3PU3BH4C15LAKVHOR5I70O0RG3GL.mp3"
-audio_id = input("Audio input: ")
-content = check_audio_file_content(audio_id)
-# check file audio có tồn tại không
-#print(content)
-
-'''
-keyword = "thanh toán"
-def find_keyword_sentences(content, keyword):
-    sentences_with_keyword = [entry['text'] for entry in content if keyword in entry['text']]
-    return sentences_with_keyword
-sentences = find_keyword_sentences(content, keyword)
-'''
-'''
-json_data = [
-    {"Bucket": "motivation_b1bom", "key": "thanh toán"},
-    {"Bucket": "motivation_b1bom", "key": "đi vay khó"},
-    {"Bucket": "motivation_b1bom", "key": "khó đi vay đi mượn mua đồ trả góp"}
+# Example data
+data = [
+    {
+        "name": 1228151252,
+        "agentChannel": 1,
+        "content": [
+            {"channel": 2, "text": "alo"},
+            {"channel": 1, "text": "alo à dạ cho em hỏi số này của chị trang đang nghe máy phải lừa đảo"},
+            {"channel": 2, "text": "vâng"},
+            {"channel": 2, "text": "à ờ có gì không em"},
+            {"channel": 1, "text": "à dạ vâng em chờ chị cả em hiểu nhân viên của bên công ty tài chính vpbank smbc anh liên hệ với cái gì kệ nó chị trễ dạ thì em gọi để tránh trường hợp đồng đợt trước á mình có nhân viên bên em mà có hồ sơ trả góp đó là có 1 cái điện thoại samsung đó chị dạ cái này hiện tại thì bên em đang có chương trình tri ân đó"},
+            {"channel": 2, "text": "ừ"},
+            {"channel": 1, "text": "hỗ trợ chị được tham gia vay vốn tiêu dụng ạ em thấy kỳ này chị được hỗ trợ gói vay lên đến là 62000000 đồng nè thì có gì em tư vấn cho chị trễ mà nghe qua theo gói vay 1 xíu ha"},
+            {"channel": 2, "text": "ừ thôi em khi nào chị chị kẹt rồi chị chị"},
+            {"channel": 1, "text": "à"},
+            {"channel": 2, "text": "chị hỏi chứ giờ chị nói chung là chị cũng không có làm gì hết cho nên cũng không có có hỏi chi nữa đâu em ha"},
+            {"channel": 1, "text": "em thấy là hôm rồi mình cũng hay tham gia mua đồ trả góp cũng nhiều nè chừng nào đợt này chị có dự tính là mua đồ trả góp gì thêm nữa không"},
+            {"channel": 2, "text": "ừ"},
+            {"channel": 2, "text": "ừ à"},
+            {"channel": 1, "text": "ti vi hoặc là xe máy tủ lạnh điện thoại gì không"},
+            {"channel": 2, "text": "à không em"},
+            {"channel": 2, "text": "nói chung là giờ còn xài mấy cái đó nhà chị có rồi khi nào có gì thiếu á chị xuống nha"},
+            {"channel": 1, "text": "ừ nói nói chung thì đợt này"}
+        ],
+        "metadata": {
+            "duration": "101344",
+            "crmid": "1228151252",
+            "uh": "Phạm Thị Mỹ Hằng",
+            "code_sales": "TX006769",
+            "full_name_tl": "Nguyễn Đăng Khoa",
+            "code_tl": "TSA43086",
+            "id": "JDOPPEVDTP0D5D1O6LV7E7NI3O1I3EL0",
+            "username": "nguyenminhhieu15"
+        }
+    }
 ]
-'''
 
-def check_text_for_keywords(text, keywords):
-    #a= "khôn tìm thấy"
-    for keyword_obj in keywords:
-        keyword = keyword_obj['key']
-        bucket = keyword_obj['Bucket']
-        if keyword in text:
-            return f"Text: {text}  \nBucket: {bucket}  \nKeyword: {keyword}"
-    return None
+# Extracting 3 sentences before and after the keyword "lừa đảo"
+keyword = "lừa đảo"
+surrounding_text = extract_surrounding_text(keyword, data)
 
-
-# Function to iterate through JSON data and check content against keywords (lặp để tìm câu chứa từ khóa tìm được)
-def process_json_data(json_data, content):
-    results = []
-    for item in content:
-        text = item['text']
-        result = check_text_for_keywords(text, json_data)
-        if result:
-            results.append(result)
-    return results
-#
-
-if content == None:
-    status = "Không tìm thấy file Audio"
-    results = ""
-else:
-    status = "Thành công"
-    results = process_json_data(json_data, content)
-
-
-for point in results:
-    print(f"Trạng thái: {status}  \nKết quả: {point}")
+# Display the result
+print(surrounding_text)

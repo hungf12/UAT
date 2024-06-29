@@ -3,14 +3,14 @@
 import json
 
 # Path to the JSON Transcript file
-file_path = 'C:/Users/Admin/Downloads/FEC_CLX/transcript/fec_clx_887_clean.json'
+file_path = 'C:/Users/Admin/Downloads/FEC_TLS/Transcript/fec_tls_842_1_clean.json'
 
 # Read the JSON Transcript file
 with open(file_path, 'r', encoding='utf-8') as file:
     data = json.load(file)
 
 # Path to the JSON Data KeyWord Motivation file
-file_path_motivation = 'C:/Users/Admin/Downloads/FEC_CLX/transcript/data_kw_motivation.json'
+file_path_motivation = 'C:/Users/Admin/Downloads/FEC_TLS/Transcript/Data_Atitude_kw.json'
 # Read the JSON Data KeyWord Motivation file
 with open(file_path_motivation, 'r', encoding='utf-8') as file:
     json_data = json.load(file)
@@ -27,7 +27,7 @@ def check_audio_file_content(audio_id):
 
 # Check content for the specified audio file
 #audio_id = "R7QO3PU3BH4C15LAKVHOR5I70O0RG3GL.mp3"
-audio_id = input("Audio input: ")
+audio_id = int (input("Audio input: "))
 content = check_audio_file_content(audio_id)
 
 if content == None:
