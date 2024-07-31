@@ -450,4 +450,4 @@ for i in data:
             "result": "No"
         })
 
-print(f"kết quả cuối: {result_recommentdation}")
+print(f"kết quả: {result_recommentdation}")
