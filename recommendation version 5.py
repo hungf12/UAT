@@ -1,4 +1,7 @@
-
+'''import json
+#import pandas as pd
+with open ("Recommendation_output_api.json","r",encoding= "utf-8")as f:
+    data = json.load(f)'''
 data = [  {
         "fileName": "0094036ecb1adf60.mp3",
         "agentChannel": 1,
@@ -258,50 +261,50 @@ data = [  {
         "criterias_order": []
     },]
 
-'''
-import json
-#import pandas as pd
-with open ("Recommendation_output_api.json","r",encoding= "utf-8")as f:
-    data = json.load(f)
-'''
 result_recommentdation = []
 for i in data:
-    if (i["mentionHistory"]["decision"]) == "yes":
-        if (i["agentUnderstand"]["decision"]) == "yes" and (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
-            result_recommentdation.append({
-                "case:": "1",
-                "file_name": i["fileName"],
-                "result": "Yes"
-            })
-        else:
-            result_recommentdation.append({
-                "case": "2",
-                "file_name": i["fileName"],
-                "result": "Partially"
-            })
-    elif (i["mentionHistory"]["decision"]) == "no":
-        if (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
-            result_recommentdation.append({
-                "case": "3",
-                "file_name": i["fileName"],
-                "result": "Yes"
-            })
-        elif (i["askPaymentReceipt"]["decision"]) == "yes" and (i["dueDateMention"]["decision"]) == "yes":
-            result_recommentdation.append({
-                "case": "4",
-                "file_name": i["fileName"],
-                "result": "Yes"
-            })
-        else:
-            result_recommentdation.append({
-                "case": "5",
-                "file_name": i["fileName"],
-                "result": "Partially"
-            })
-
+    if (i["mentionHistory"]["decision"]) == "yes" and (i["agentUnderstand"]["decision"]) == "yes" and (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
+        result_recommentdation.append({
+            "file_name": i["fileName"],
+            "result": "Yes"
+        })
+    if (i["mentionHistory"]["decision"]) == "yes" and (i["agentUnderstand"]["decision"]) == "yes" and (i["dueDateMention"]["decision"]) == "yes":
+        result_recommentdation.append({
+            "file_name": i["fileName"],
+            "result": "Partially"
+        })
+    if (i["mentionHistory"]["decision"]) == "yes" and (i["agentUnderstand"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
+        result_recommentdation.append({
+            "file_name": i["fileName"],
+            "result": "Partially"
+        })
+    if (i["mentionHistory"]["decision"] )== "yes" and (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
+        result_recommentdation.append({
+            "file_name": i["fileName"],
+            "result": "Partially"
+        })
+    if (i["mentionHistory"]["decision"]) == "no" and (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
+        result_recommentdation.append({
+            "file_name": i["fileName"],
+            "result": "Yes"
+        })
+    if (i["mentionHistory"]["decision"]) == "no" and (i["dueDateMention"]["decision"]) == "yes" and (i["askPaymentReceipt"]["decision"]) == "yes":
+        result_recommentdation.append({
+            "file_name": i["fileName"],
+            "result": "Yes"
+        })
+    if (i["mentionHistory"]["decision"]) == "no" and (i["dueDateMention"]["decision"]) == "yes":
+        result_recommentdation.append({
+            "file_name": i["fileName"],
+            "result": "Partially"
+        })
+    if (i["mentionHistory"]["decision"]) == "no" and (i["askPaymentReceipt"]["decision"]) == "yes":
+        result_recommentdation.append({
+            "file_name": i["fileName"],
+            "result": "Partially"
+        })
     else:
         result_recommentdation.append({
-            "case": "fallback_3",
             "file_name": i["fileName"],
             "result": "No"
         })
