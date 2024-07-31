@@ -304,14 +304,14 @@ with open ("Recommendation_output_api.json","r",encoding= "utf-8")as f:
     data = json.load(f)
 result_recommentdation = []
 for i in data:
-    if (i["mentionHistory"]["evaluate"]) and (i["mentionHistory"]["decision"]) == "yes":
-        if (i["agentUnderstand"]["evaluate"]) and (i["agentUnderstand"]["decision"]) == "yes" and (i["dueDateMention"]["evaluate"]) and (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["evaluate"]) and (i["motivationAppear"]["decision"]) == "yes":
+    if (i["mentionHistory"]["decision"]) == "yes":
+        if (i["agentUnderstand"]["decision"]) == "yes" and (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
             result_recommentdation.append({
                 "case:": "1",
                 "file_name": i["fileName"],
                 "result": "Yes"
             })
-        elif (i["agentUnderstand"]["evaluate"]) and (i["agentUnderstand"]["decision"]) == "yes" and (i["dueDateMention"]["evaluate"]) and (i["dueDateMention"]["decision"]) == "yes" or (i["agentUnderstand"]["evaluate"]) and (i["agentUnderstand"]["decision"]) == "yes" and (i["motivationAppear"]["evaluate"]) and (i["motivationAppear"]["decision"]) == "yes" or (i["dueDateMention"]["evaluate"]) and (i["dueDateMention"]["decision"]) == "yes"  and (i["motivationAppear"]["evaluate"]) and (i["motivationAppear"]["decision"]) == "yes":
+        elif (i["agentUnderstand"]["decision"]) == "yes" and (i["dueDateMention"]["decision"]) == "yes" or (i["agentUnderstand"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes" or (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
             result_recommentdation.append({
                 "case": "2",
                 "file_name": i["fileName"],
@@ -323,16 +323,22 @@ for i in data:
                 "file_name": i["fileName"],
                 "result": "No"
             })
-    elif (i["mentionHistory"]["evaluate"]) and (i["mentionHistory"]["decision"]) == "no":
-        if (i["dueDateMention"]["evaluate"]) and (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["evaluate"]) and (i["motivationAppear"]["decision"]) == "yes":
+    elif (i["mentionHistory"]["decision"]) == "no":
+        if (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
             result_recommentdation.append({
                 "case": "3",
                 "file_name": i["fileName"],
                 "result": "Yes"
             })
-        elif (i["dueDateMention"]["evaluate"]) and (i["dueDateMention"]["decision"]) == "yes" or (i["motivationAppear"]["evaluate"]) and (i["motivationAppear"]["decision"]) == "yes":
+        elif (i["askPaymentReceipt"]["decision"]) == "yes" and (i["dueDateMention"]["decision"]) == "yes":
             result_recommentdation.append({
                 "case": "4",
+                "file_name": i["fileName"],
+                "result": "Yes"
+            })
+        elif (i["dueDateMention"]["decision"]) == "yes" or (i["motivationAppear"]["decision"]) == "yes" or (i["askPaymentReceipt"]["decision"]) == "yes":
+            result_recommentdation.append({
+                "case": "5",
                 "file_name": i["fileName"],
                 "result": "Partially"
             })
@@ -343,24 +349,11 @@ for i in data:
                 "result": "No"
             })
     else:
-        if (i["askPaymentReceipt"]["evaluate"]) and (i["askPaymentReceipt"]["decision"]) == "yes" and (i["dueDateMention"]["evaluate"]) and (i["dueDateMention"]["decision"]) == "yes":
-            result_recommentdation.append({
-                "case": "5",
-                "file_name": i["fileName"],
-                "result": "Yes"
-            })
-        elif (i["askPaymentReceipt"]["evaluate"]) and (i["askPaymentReceipt"]["decision"]) == "yes" or (i["dueDateMention"]["evaluate"]) and (i["dueDateMention"]["decision"]) == "yes":
-            result_recommentdation.append({
-                "case": "6",
-                "file_name": i["fileName"],
-                "result": "Partially"
-            })
-        else:
-            result_recommentdation.append({
-                "case": "fallback_3",
-                "file_name": i["fileName"],
-                "result": "No"
-            })
+        result_recommentdation.append({
+            "case": "fallback_3",
+            "file_name": i["fileName"],
+            "result": "No"
+        })
 count = len(result_recommentdation)
 print(f"count: {count}")
 print(f"Result: {result_recommentdation}")
