@@ -268,37 +268,37 @@ for i in data:
             "file_name": i["fileName"],
             "result": "Yes"
         })
-    if (i["mentionHistory"]["decision"]) == "yes" and (i["agentUnderstand"]["decision"]) == "yes" and (i["dueDateMention"]["decision"]) == "yes":
+    elif (i["mentionHistory"]["decision"]) == "yes" and (i["agentUnderstand"]["decision"]) == "yes" and (i["dueDateMention"]["decision"]) == "yes":
         result_recommentdation.append({
             "file_name": i["fileName"],
             "result": "Partially"
         })
-    if (i["mentionHistory"]["decision"]) == "yes" and (i["agentUnderstand"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
+    elif (i["mentionHistory"]["decision"]) == "yes" and (i["agentUnderstand"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
         result_recommentdation.append({
             "file_name": i["fileName"],
             "result": "Partially"
         })
-    if (i["mentionHistory"]["decision"] )== "yes" and (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
+    elif (i["mentionHistory"]["decision"] )== "yes" and (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
         result_recommentdation.append({
             "file_name": i["fileName"],
             "result": "Partially"
         })
-    if (i["mentionHistory"]["decision"]) == "no" and (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
+    elif (i["mentionHistory"]["decision"]) == "no" and (i["dueDateMention"]["decision"]) == "yes" and (i["motivationAppear"]["decision"]) == "yes":
         result_recommentdation.append({
             "file_name": i["fileName"],
             "result": "Yes"
         })
-    if (i["mentionHistory"]["decision"]) == "no" and (i["dueDateMention"]["decision"]) == "yes" and (i["askPaymentReceipt"]["decision"]) == "yes":
+    elif (i["mentionHistory"]["decision"]) == "no" and (i["dueDateMention"]["decision"]) == "yes" and (i["askPaymentReceipt"]["decision"]) == "yes":
         result_recommentdation.append({
             "file_name": i["fileName"],
             "result": "Yes"
         })
-    if (i["mentionHistory"]["decision"]) == "no" and (i["dueDateMention"]["decision"]) == "yes":
+    elif (i["mentionHistory"]["decision"]) == "no" and (i["dueDateMention"]["decision"]) == "yes":
         result_recommentdation.append({
             "file_name": i["fileName"],
             "result": "Partially"
         })
-    if (i["mentionHistory"]["decision"]) == "no" and (i["askPaymentReceipt"]["decision"]) == "yes":
+    elif (i["mentionHistory"]["decision"]) == "no" and (i["askPaymentReceipt"]["decision"]) == "yes":
         result_recommentdation.append({
             "file_name": i["fileName"],
             "result": "Partially"
