@@ -85,7 +85,7 @@ data = [ {
                 "1": "no"
             },
             "decision_position": [],
-            "decision": "no",
+            "decision": "yes",
             "confidence": 0.0,
             "confidence_channel": {
                 "2": 0.0,
@@ -114,7 +114,7 @@ data = [ {
                     "entities": {}
                 }
             ],
-            "decision": "yes",
+            "decision": "no",
             "confidence": 1.0,
             "confidence_channel": {
                 "2": 1.0,

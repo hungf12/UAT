@@ -1,6 +1,7 @@
 # chỗ này là chạy tools như qq
 
 import json
+import  re
 
 # Path to the JSON Transcript file
 file_path = 'C:/Users/Admin/Downloads/FEC_TLS/Transcript/fec_tls_842_1_clean.json'
