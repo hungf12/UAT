@@ -348,3 +348,4 @@ for item in data:
         })
 # Output the result
 print(f"result: {result_array}")
+
