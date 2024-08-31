@@ -27,7 +27,7 @@ def check_keywords(data_file, keyword_file):
                     results.append({
                         "file": call["name"],
                         "keyword": keyword,
-                        "context": surrounding_text
+                        "content_text": surrounding_text
                     })
     return results
 
@@ -38,9 +38,7 @@ result = check_keywords(data_file, keyword_file)
 for r in result:
     print(f"File: {r['file']}")
     print(f"Keyword: {r['keyword']}")
-    print("Context:")
-    for c in r['context']:
-        print(f"Channel {c['channel']}: {c['text']}")
+    print(f"Content:  {r['content_text']}")
     print("-" * 40)
 
 # Optionally, write the results to a JSON file

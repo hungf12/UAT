@@ -118,18 +118,14 @@ text_combined = text_combined.replace("'","")
 
 print(f"log {result}")
 #print(text_combined)
-
+# Print results
+for r in result:
+    print(f"File: {r['file']}")
+    print(f"Keyword: {r['key']}")
+    print(f"Text: {r['Text']}")
+    print("-" * 40)
 
 
 
 #print(result)
-'''
-# Print results
-for r in result:
-    #print(f"File: {r['file']}")
-    #print(f"Keyword: {r['keyword']}")
-    print("Context:")
-    for c in r['context']:
-        print(f"Channel {c['channel']}: {c['text']}")
-    print("-" * 40)
-'''
+
