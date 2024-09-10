@@ -150,15 +150,37 @@ result_array = []
 
 # Loop through each item in the data
 for item in data:
-    slots = item['willpaySummary']['slots']
+    slots_0 = item['willpaySummary']['slots']
+    slots_1 = item['nopaySummary']['slots']
+    slots_2 = item['paidSummary']['slots']
     # Check if all three keys exist
-    if ('amount' in slots) and ('payment_datetime' in slots) and ('payment_method' in slots) and ('due_date' in slots):
+    if ('amount' in slots_0) and ('payment_datetime' in slots_0) and ('payment_method' in slots_0) and ('due_date' in slots_0):
         result_array.append({
+            "case": "willpay",
             "file_name": item["fileName"],
             "result": "true"
         })
-    elif ('amount' in slots) and ('payment_datetime' in slots) and ('payment_method' in slots) or ('due_date' in slots):
+    elif ('amount' in slots_0) and ('payment_datetime' in slots_0) and ('payment_method' in slots_0) or ('due_date' in slots_0):
         result_array.append({
+            "case": "willpay",
+            "file_name": item["fileName"],
+            "result": "partially"
+        })
+    elif 'due_date' in slots_1:
+        result_array.append({
+            "case": "Nopay",
+            "file_name": item["fileName"],
+            "result": "Yes"
+        })
+    elif ('receipt' in slots_2) and ('hotline' in slots_2):
+        result_array.append({
+            "case": "paid",
+            "file_name": item["fileName"],
+            "result": "Yes"
+        })
+    elif ('receipt' in slots_2) or ('hotline' in slots_2):
+        result_array.append({
+            "case": "paid",
             "file_name": item["fileName"],
             "result": "partially"
         })
