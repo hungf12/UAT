@@ -160,7 +160,7 @@ for item in data:
             "file_name": item["fileName"],
             "result": "true"
         })
-    elif ('amount' in slots_0) and ('payment_datetime' in slots_0) and ('payment_method' in slots_0) or ('due_date' in slots_0):
+    elif ('amount' in slots_0) and ('payment_datetime' in slots_0) and ('payment_method' in slots_0) and ('due_date' in slots_0):
         result_array.append({
             "case": "willpay",
             "file_name": item["fileName"],
