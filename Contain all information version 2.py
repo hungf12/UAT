@@ -1,19 +1,19 @@
 data = [{
-    "fileName": "",
-    "agentChannel": 2,
-    "time_load_info": 0.003935098648071289,
+    "fileName": "009403631b6caf3a.mp3",
+    "agentChannel": 1,
+    "time_load_info": 0.4165160655975342,
     "nopaySummary": {
         "evaluate": "no",
         "evaluate_channel": {
-            "2": "no",
-            "1": "no"
+            "1": "no",
+            "2": "no"
         },
         "decision_position": [],
         "decision": "no",
         "confidence": 0.0,
         "confidence_channel": {
-            "2": 0.0,
-            "1": 0.0
+            "1": 0.0,
+            "2": 0.0
         },
         "position": [],
         "slots": {},
@@ -24,15 +24,15 @@ data = [{
     "paidSummary": {
         "evaluate": "no",
         "evaluate_channel": {
-            "2": "no",
-            "1": "no"
+            "1": "no",
+            "2": "no"
         },
         "decision_position": [],
         "decision": "no",
         "confidence": 0.0,
         "confidence_channel": {
-            "2": 0.0,
-            "1": 0.0
+            "1": 0.0,
+            "2": 0.0
         },
         "position": [],
         "slots": {},
@@ -43,42 +43,44 @@ data = [{
     "willpaySummary": {
         "evaluate": "yes",
         "evaluate_channel": {
-            "2": "yes",
-            "1": "yes"
+            "1": "yes",
+            "2": "yes"
         },
         "decision_position": [
             {
-                "index": 10,
-                "channel": 2,
-                "text": "lưu ý chuyển nhận tiền qua trung gian mất 1 ngày tránh phát sinh rủi ro có sớm trong hôm nay 26 góp giùm em còn không chậm nhất ngày mai 27 nha chị",
+                "index": 16,
+                "channel": 1,
+                "text": "cảm ơn xác nhận đóng 1110000 trong ngày 12 trong ngày mai có chuyển khoản các chị góp tiếp theo như chị trước ngày 13 để hưởng các ưu đãi về sau cảm ơn chào anh ạ",
                 "intents": [
                     "willpay_summary"
                 ],
                 "entities": {
+                    "amount": [
+                        {
+                            "start": 21,
+                            "end": 28,
+                            "value": "1110000",
+                            "real_value": "1110000",
+                            "entity": "amount",
+                            "subentities": [],
+                            "is_required": "required"
+                        }
+                    ],
                     "payment_datetime": [
                         {
-                            "start": 85,
-                            "end": 92,
-                            "value": "hôm nay",
-                            "real_value": "hôm nay",
+                            "start": 35,
+                            "end": 42,
+                            "value": "ngày 12",
+                            "real_value": "ngày 12",
                             "entity": "payment_datetime",
                             "subentities": [],
                             "is_required": "required"
                         },
                         {
-                            "start": 93,
-                            "end": 95,
-                            "value": "26",
-                            "real_value": "26",
-                            "entity": "payment_datetime",
-                            "subentities": [],
-                            "is_required": "required"
-                        },
-                        {
-                            "start": 128,
-                            "end": 139,
-                            "value": "ngày mai 27",
-                            "real_value": "ngày mai 27",
+                            "start": 49,
+                            "end": 57,
+                            "value": "ngày mai",
+                            "real_value": "ngày mai",
                             "entity": "payment_datetime",
                             "subentities": [],
                             "is_required": "required"
@@ -86,71 +88,70 @@ data = [{
                     ],
                     "payment_method": [
                         {
-                            "start": 6,
-                            "end": 12,
-                            "value": "chuyển",
-                            "real_value": "chuyển",
+                            "start": 61,
+                            "end": 73,
+                            "value": "chuyển khoản",
+                            "real_value": "chuyển khoản",
                             "entity": "payment_method",
-                            "subentities": "null",
+                            "subentities": [],
+                            "is_required": "required"
+                        }
+                    ],
+                    "due_date": [
+                        {
+                            "start": 104,
+                            "end": 117,
+                            "value": "trước ngày 13",
+                            "real_value": "trước ngày 13",
+                            "entity": "due_date",
+                            "subentities": [],
                             "is_required": "required"
                         }
                     ]
                 }
-            },
-            {
-                "index": 11,
-                "channel": 1,
-                "text": "rồi rồi rồi nhá rồi rồi",
-                "intents": [],
-                "entities": {}
-            },
-            {
-                "index": 12,
-                "channel": 2,
-                "text": "rồi",
-                "intents": [],
-                "entities": {}
             }
         ],
         "decision": "yes",
         "confidence": 1.0,
         "confidence_channel": {
-            "2": 1.0,
-            "1": 1.0
+            "1": 1.0,
+            "2": 1.0
         },
         "position": [
             {
-                "index": 10,
-                "channel": 2,
-                "text": "lưu ý chuyển nhận tiền qua trung gian mất 1 ngày tránh phát sinh rủi ro có sớm trong hôm nay 26 góp giùm em còn không chậm nhất ngày mai 27 nha chị",
+                "index": 16,
+                "channel": 1,
+                "text": "cảm ơn xác nhận đóng 1110000 trong ngày 12 trong ngày mai có chuyển khoản các chị góp tiếp theo như chị trước ngày 13 để hưởng các ưu đãi về sau cảm ơn chào anh ạ",
                 "intents": [
                     "willpay_summary"
                 ],
                 "entities": {
+                    "amount": [
+                        {
+                            "start": 21,
+                            "end": 28,
+                            "value": "1110000",
+                            "real_value": "1110000",
+                            "entity": "amount",
+                            "subentities": [],
+                            "is_required": "required"
+                        }
+                    ],
                     "payment_datetime": [
                         {
-                            "start": 85,
-                            "end": 92,
-                            "value": "hôm nay",
-                            "real_value": "hôm nay",
+                            "start": 35,
+                            "end": 42,
+                            "value": "ngày 12",
+                            "real_value": "ngày 12",
                             "entity": "payment_datetime",
                             "subentities": [],
                             "is_required": "required"
                         },
                         {
-                            "start": 93,
-                            "end": 95,
-                            "value": "26",
-                            "real_value": "26",
-                            "entity": "payment_datetime",
-                            "subentities": [],
-                            "is_required": "required"
-                        },
-                        {
-                            "start": 128,
-                            "end": 139,
-                            "value": "ngày mai 27",
-                            "real_value": "ngày mai 27",
+                            "start": 49,
+                            "end": 57,
+                            "value": "ngày mai",
+                            "real_value": "ngày mai",
                             "entity": "payment_datetime",
                             "subentities": [],
                             "is_required": "required"
@@ -158,79 +159,96 @@ data = [{
                     ],
                     "payment_method": [
                         {
-                            "start": 6,
-                            "end": 12,
-                            "value": "chuyển",
-                            "real_value": "chuyển",
+                            "start": 61,
+                            "end": 73,
+                            "value": "chuyển khoản",
+                            "real_value": "chuyển khoản",
                             "entity": "payment_method",
-                            "subentities": "null",
+                            "subentities": [],
+                            "is_required": "required"
+                        }
+                    ],
+                    "due_date": [
+                        {
+                            "start": 104,
+                            "end": 117,
+                            "value": "trước ngày 13",
+                            "real_value": "trước ngày 13",
+                            "entity": "due_date",
+                            "subentities": [],
                             "is_required": "required"
                         }
                     ]
                 }
-            },
-            {
-                "index": 11,
-                "channel": 1,
-                "text": "rồi rồi rồi nhá rồi rồi",
-                "intents": [],
-                "entities": {}
-            },
-            {
-                "index": 12,
-                "channel": 2,
-                "text": "rồi",
-                "intents": [],
-                "entities": {}
             }
         ],
         "slots": {
-            "payment_datetime": [
+            "amount": [
                 {
-                    "index": 10,
+                    "index": 16,
                     "value": [
-                        "hôm nay",
-                        "26",
-                        "ngày mai 27"
+                        "1110000"
                     ],
                     "real_value": [
-                        "hôm nay",
-                        "26",
-                        "ngày mai 27"
+                        "1110000"
+                    ]
+                }
+            ],
+            "payment_datetime": [
+                {
+                    "index": 16,
+                    "value": [
+                        "ngày 12",
+                        "ngày mai"
+                    ],
+                    "real_value": [
+                        "ngày 12",
+                        "ngày mai"
                     ]
                 }
             ],
             "payment_method": [
                 {
-                    "index": 10,
+                    "index": 16,
                     "value": [
-                        "chuyển"
+                        "chuyển khoản"
                     ],
                     "real_value": [
-                        "chuyển"
+                        "chuyển khoản"
+                    ]
+                }
+            ],
+            "due_date": [
+                {
+                    "index": 16,
+                    "value": [
+                        "trước ngày 13"
+                    ],
+                    "real_value": [
+                        "trước ngày 13"
                     ]
                 }
             ]
         },
         "position_range_index": [
-            10,
-            12
+            16,
+            16
         ],
         "position_condition": [
-            10
+            16
         ],
         "task": "compare"
     },
     "callResultAI": {
         "evaluate": "yes",
         "evaluate_channel": {
-            "2": "yes"
+            "1": "yes"
         },
         "decision_position": [
             {
                 "index": 0,
-                "channel": 2,
-                "text": "<agent>: dạ <agent>: dạ chị <agent>: alo <customer>: alo <agent>: chị nghe rõ tín hiệu không chị chào chị em thuộc home credit á chị hoàng thúy vân đúng không chị <customer>: ừ <agent>: đánh giá nâng cao chất lượng dịch vụ hỗ trợ xe máy honda đang vay mua trả góp tôi hẹn hồ sơ hồ sơ thanh toán hàng tháng 28 của chị số tiền thanh toán là 1624000 hôm nay 26 rồi nè chị vân <customer>: ừ ừ ừ rồi rồi rồi <agent>: ngày nào công ty luôn chị <customer>: rồi rồi rồi <agent>: lưu ý chuyển nhận tiền qua trung gian mất 1 ngày tránh phát sinh rủi ro có sớm trong hôm nay 26 góp giùm em còn không chậm nhất ngày mai 27 nha chị <customer>: rồi rồi rồi nhá rồi rồi <agent>: rồi",
+                "channel": 1,
+                "text": "<agent>: alo xin chào em là <customer>: alo <agent>: phạm đức cường đang nghe máy đúng không ạ <customer>: chị ơi <agent>: em gọi từ home credit việt nam á dạ anh là phạm đức cường đúng không ạ <customer>: ờ đúng rồi anh <agent>: đánh giá nâng cao chất lượng dịch vụ cuộc gọi này sẽ được ghi âm em gọi hỗ trợ thông tin thanh toán kỳ tiếp theo hợp đồng anh đang vay vốn số tiền là 1110000 đóng tiền ngày 13 đúng hạn trả góp này và duy trì lịch sử thanh toán anh đóng ngày nào đúng hạn trước ngày 13 ạ <customer>: dạ mai mai hoặc 1 em báo cho anh <agent>: cảm ơn hợp đồng đóng tiền rất tốt á tháng gọi hỗ trợ duy trì lịch sử thanh toán tốt của anh trên ngân hàng nhà nước ngoài ra kỳ này công ty cũng đang hỗ trợ việc thanh lý sớm á anh có nhu cầu tất toán dư nợ còn lại được hỗ trợ giảm lãi không ạ <customer>: dạ không dạ không không em em nên tại em đang đi đi xe á anh <agent>: dạ <agent>: dạ vậy tiền kỳ của anh vẫn là 1110000 nhé <customer>: em đang bận <customer>: rồi rồi rồi rồi <agent>: anh vẫn thanh toán chuyển khoản đúng không anh <customer>: rồi rồi rồi dạ dạ dạ <agent>: cảm ơn xác nhận đóng 1110000 trong ngày 12 trong ngày mai có chuyển khoản các chị góp tiếp theo như chị trước ngày 13 để hưởng các ưu đãi về sau cảm ơn chào anh ạ <customer>: rồi rồi rồi",
                 "intents": [
                     "willpay"
                 ],
@@ -240,13 +258,13 @@ data = [{
         "decision": "willpay",
         "confidence": 1.0,
         "confidence_channel": {
-            "2": 1.0
+            "1": 1.0
         },
         "position": [
             {
                 "index": 0,
-                "channel": 2,
-                "text": "<agent>: dạ <agent>: dạ chị <agent>: alo <customer>: alo <agent>: chị nghe rõ tín hiệu không chị chào chị em thuộc home credit á chị hoàng thúy vân đúng không chị <customer>: ừ <agent>: đánh giá nâng cao chất lượng dịch vụ hỗ trợ xe máy honda đang vay mua trả góp tôi hẹn hồ sơ hồ sơ thanh toán hàng tháng 28 của chị số tiền thanh toán là 1624000 hôm nay 26 rồi nè chị vân <customer>: ừ ừ ừ rồi rồi rồi <agent>: ngày nào công ty luôn chị <customer>: rồi rồi rồi <agent>: lưu ý chuyển nhận tiền qua trung gian mất 1 ngày tránh phát sinh rủi ro có sớm trong hôm nay 26 góp giùm em còn không chậm nhất ngày mai 27 nha chị <customer>: rồi rồi rồi nhá rồi rồi <agent>: rồi",
+                "channel": 1,
+                "text": "<agent>: alo xin chào em là <customer>: alo <agent>: phạm đức cường đang nghe máy đúng không ạ <customer>: chị ơi <agent>: em gọi từ home credit việt nam á dạ anh là phạm đức cường đúng không ạ <customer>: ờ đúng rồi anh <agent>: đánh giá nâng cao chất lượng dịch vụ cuộc gọi này sẽ được ghi âm em gọi hỗ trợ thông tin thanh toán kỳ tiếp theo hợp đồng anh đang vay vốn số tiền là 1110000 đóng tiền ngày 13 đúng hạn trả góp này và duy trì lịch sử thanh toán anh đóng ngày nào đúng hạn trước ngày 13 ạ <customer>: dạ mai mai hoặc 1 em báo cho anh <agent>: cảm ơn hợp đồng đóng tiền rất tốt á tháng gọi hỗ trợ duy trì lịch sử thanh toán tốt của anh trên ngân hàng nhà nước ngoài ra kỳ này công ty cũng đang hỗ trợ việc thanh lý sớm á anh có nhu cầu tất toán dư nợ còn lại được hỗ trợ giảm lãi không ạ <customer>: dạ không dạ không không em em nên tại em đang đi đi xe á anh <agent>: dạ <agent>: dạ vậy tiền kỳ của anh vẫn là 1110000 nhé <customer>: em đang bận <customer>: rồi rồi rồi rồi <agent>: anh vẫn thanh toán chuyển khoản đúng không anh <customer>: rồi rồi rồi dạ dạ dạ <agent>: cảm ơn xác nhận đóng 1110000 trong ngày 12 trong ngày mai có chuyển khoản các chị góp tiếp theo như chị trước ngày 13 để hưởng các ưu đãi về sau cảm ơn chào anh ạ <customer>: rồi rồi rồi",
                 "intents": [
                     "willpay"
                 ],
@@ -268,33 +286,53 @@ data = [{
             "criteria_name": "willpaySummary",
             "decision": "yes",
             "position_range_index": [
-                10,
-                12
+                16,
+                16
             ],
             "slots": {
-                "payment_datetime": [
+                "amount": [
                     {
-                        "index": 10,
+                        "index": 16,
                         "value": [
-                            "hôm nay",
-                            "26",
-                            "ngày mai 27"
+                            "1110000"
                         ],
                         "real_value": [
-                            "hôm nay",
-                            "26",
-                            "ngày mai 27"
+                            "1110000"
+                        ]
+                    }
+                ],
+                "payment_datetime": [
+                    {
+                        "index": 16,
+                        "value": [
+                            "ngày 12",
+                            "ngày mai"
+                        ],
+                        "real_value": [
+                            "ngày 12",
+                            "ngày mai"
                         ]
                     }
                 ],
                 "payment_method": [
                     {
-                        "index": 10,
+                        "index": 16,
                         "value": [
-                            "chuyển"
+                            "chuyển khoản"
                         ],
                         "real_value": [
-                            "chuyển"
+                            "chuyển khoản"
+                        ]
+                    }
+                ],
+                "due_date": [
+                    {
+                        "index": 16,
+                        "value": [
+                            "trước ngày 13"
+                        ],
+                        "real_value": [
+                            "trước ngày 13"
                         ]
                     }
                 ]
@@ -338,16 +376,22 @@ for item in data:
                     "file_name": item["fileName"],
                     "result": "Yes"
                 })
-            else:
-                result_contain_all_information.append({
-                    "case": "faillback_1",
-                    "file_name": item["fileName"],
-                    "result": "No"
-                })
-        else:
-            if ('amount' in slots_0) and ('payment_datetime' in slots_0) or ('amount' in slots_0) and ('payment_method' in slots_0) or ('payment_datetime' in slots_0) and ('payment_method' in slots_0):
+            elif ('amount' in slots_0) or ('payment_datetime' in slots_0) or ('payment_method' in slots_0):
                 result_contain_all_information.append({
                     "case": "willpay_5",
+                    "file_name": item["fileName"],
+                    "result": "partially"
+                })
+            else:
+                result_contain_all_information.append({
+                    "case": "willpay_5",
+                    "file_name": item["fileName"],
+                    "result": "partially"
+                })
+        elif 'due_date' not in slots_0:
+            if ('amount' in slots_0) and ('payment_datetime' in slots_0) or ('amount' in slots_0) and ('payment_method' in slots_0) or ('payment_datetime' in slots_0) and ('payment_method' in slots_0) or ('amount' in slots_0) and ('payment_datetime' in slots_0) and ('payment_method' in slots_0):
+                result_contain_all_information.append({
+                    "case": "willpay_6",
                     "file_name": item["fileName"],
                     "result": "partially"
                 })
@@ -357,6 +401,12 @@ for item in data:
                     "file_name": item["fileName"],
                     "result": "No"
                 })
+        else:
+            result_contain_all_information.append({
+                "case": "faillback_willpay",
+                "file_name": item["fileName"],
+                "result": "No"
+            })
     elif (item["callResultAI"]["decision"]) == "nopay":
         if 'due_date' in slots_1:
             result_contain_all_information.append({
