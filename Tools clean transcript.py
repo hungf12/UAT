@@ -5,9 +5,12 @@ from pathlib import Path
 import tkinter as tk
 from tkinter import messagebox
 from PIL import Image, ImageTk
+import re
+
 def submit_info():
     base_folder = entry_base_folder.get()
-    if base_folder:
+    regex = r'^[a-zA-Z]:[\\\/]([^\\\/:*?"<>|]+[\\\/])*[^\\\/:*?"<>|]*$'
+    if re.match(base_folder, regex):
         merged_data = []
 
         # Walk through all folders and subfolders
@@ -58,28 +61,29 @@ def submit_info():
                 force_ascii=False,
                 indent=2,
             )
-        messagebox.showinfo("Thành Công", f"Tên File Transcript: {file_name}")
+        messagebox.showinfo("Successfully", f"Name Transcript: {file_name}")
         folder_path = 'C:/Users/Admin/Downloads/test'
         os.startfile(folder_path)
     else:
-        messagebox.showwarning("Lỗi", "Thông tin không chính xác")
+        messagebox.showerror("Error", "Invalid file path")
 
 def exit_app():
     # Kiểm tra nếu tất cả các trường đều trống
-    if not entry_base_folder.get():
-        root.destroy()  # Thoát chương trình
-    else:
-        messagebox.showwarning("Cảnh báo", "Vui lòng hoàn tất thông tin hoặc xóa hết để thoát.")
+    root.destroy()
+    # if not entry_base_folder.get():
+    #     root.destroy()  # Thoát chương trình
+    # else:
+    #     messagebox.showwarning("Warning", "Vui lòng hoàn tất thông tin hoặc xóa hết để thoát.")
 def clear_text():
     if not entry_base_folder.get():
-        messagebox.showinfo("Thông báo","Vui lòng nhập đường dẫn Path")
+        messagebox.showwarning("Warning","File path is required")
     else:
         entry_base_folder.delete(0, tk.END)
 
 # Tạo cửa sổ chính
 root = tk.Tk()
 root.geometry("400x300")
-root.title("Nhập File chứa Transcrip")
+root.title("Format Clean Transcript")
 
 # Tạo icon cho From nhập
 icon_image = Image.open('logo-fpt-inkythuatso-1-01-01-14-33-35.jpg')
