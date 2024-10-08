@@ -1,83 +1,228 @@
 data = [{
-        "fileName": "R7QO3PU3BH4C15LAKVHOR5I70O0R5I0L.mp3",
+        "fileName": "3HIB8497M94GF59UVH2O8528C4000BV1_2024-01-11_01-39-26_0.mp3",
         "agentChannel": 1,
-        "time_load_info": 0.0032384395599365234,
+        "time_load_info": 0.0037529468536376953,
         "askPaymentAmount": {
             "evaluate": "yes",
             "evaluate_channel": {
-                "2": "yes",
-                "1": "yes"
+                "1": "yes",
+                "2": "yes"
             },
             "decision_position": [
-                {
-                    "index": 27,
-                    "channel": 1,
-                    "text": "như vầy như em nói cho chị như vầy em chỉ để cho mình chậm nhất trước 5 giờ chiều nay chị không đóng được 1 kỳ tương đương với 1700000 thì bên em sẽ tiến hành theo quy định gửi đơn về địa phương của mình để xử lý nợ luôn chị nha cám ơn chị ạ",
-                    "intents": [
-                        "ask_payment_info"
-                    ],
-                    "entities": {
-                        "payment_amount": [
-                            {
-                                "start": 127,
-                                "end": 134,
-                                "value": "1700000",
-                                "real_value": "1700000",
-                                "entity": "payment_amount",
-                                "subentities": [],
-                                "is_required": "required"
-                            }
-                        ]
+                [
+                    {
+                        "index": 12,
+                        "channel": 1,
+                        "text": "anh phải đóng đủ tiền nó có không tính là trễ cho anh anh còn thiếu 2944000 hả anh",
+                        "intents": [
+                            "ask_payment_info"
+                        ],
+                        "entities": {
+                            "payment_amount": [
+                                {
+                                    "start": 68,
+                                    "end": 75,
+                                    "value": "2944000",
+                                    "real_value": "2944000",
+                                    "entity": "payment_amount",
+                                    "subentities": [],
+                                    "is_required": "required"
+                                }
+                            ],
+                            "payment_amount_word": [
+                                {
+                                    "start": 9,
+                                    "end": 16,
+                                    "value": "đóng đủ",
+                                    "real_value": "đóng đủ",
+                                    "entity": "payment_amount_word",
+                                    "subentities": "None",
+                                    "is_required": "required"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "index": 19,
+                        "channel": 2,
+                        "text": "30000000 đúng",
+                        "intents": [],
+                        "entities": {
+                            "customer_confirm_word": [
+                                {
+                                    "entity": "customer_confirm_word",
+                                    "value": "đúng",
+                                    "start": 9,
+                                    "end": 13,
+                                    "real_value": "đúng",
+                                    "is_required": "required"
+                                }
+                            ]
+                        }
                     }
-                },
-                {
-                    "index": 28,
-                    "channel": 2,
-                    "text": "dạ vâng ạ dạ vâng ạ",
-                    "intents": [],
-                    "entities": {
-                        "customer_confirm_word": [
-                            {
-                                "entity": "customer_confirm_word",
-                                "value": "dạ",
-                                "start": 0,
-                                "end": 2,
-                                "real_value": "dạ",
-                                "is_required": "required"
-                            },
-                            {
-                                "entity": "customer_confirm_word",
-                                "value": "dạ",
-                                "start": 10,
-                                "end": 12,
-                                "real_value": "dạ",
-                                "is_required": "required"
-                            }
-                        ]
+                ],
+                [
+                    {
+                        "index": 36,
+                        "channel": 1,
+                        "text": "dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha",
+                        "intents": [
+                            "ask_payment_info"
+                        ],
+                        "entities": {
+                            "payment_amount": [
+                                {
+                                    "start": 65,
+                                    "end": 72,
+                                    "value": "2944000",
+                                    "real_value": "2944000",
+                                    "entity": "payment_amount",
+                                    "subentities": [],
+                                    "is_required": "required"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "index": 37,
+                        "channel": 2,
+                        "text": "à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á",
+                        "intents": [],
+                        "entities": {
+                            "customer_confirm_word": [
+                                {
+                                    "entity": "customer_confirm_word",
+                                    "value": "rồi",
+                                    "start": 2,
+                                    "end": 5,
+                                    "real_value": "rồi",
+                                    "is_required": "required"
+                                }
+                            ]
+                        }
                     }
-                }
+                ],
+                [
+                    {
+                        "index": 40,
+                        "channel": 1,
+                        "text": "dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha",
+                        "intents": [
+                            "ask_payment_info"
+                        ],
+                        "entities": {
+                            "payment_amount": [
+                                {
+                                    "start": 31,
+                                    "end": 38,
+                                    "value": "2944000",
+                                    "real_value": "2944000",
+                                    "entity": "payment_amount",
+                                    "subentities": [],
+                                    "is_required": "required"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "index": 41,
+                        "channel": 2,
+                        "text": "ờ đâu có biết đâu rồi cám ơn em",
+                        "intents": [],
+                        "entities": {
+                            "customer_confirm_word": [
+                                {
+                                    "entity": "customer_confirm_word",
+                                    "value": "ờ",
+                                    "start": 0,
+                                    "end": 1,
+                                    "real_value": "ờ",
+                                    "is_required": "required"
+                                },
+                                {
+                                    "entity": "customer_confirm_word",
+                                    "value": "rồi",
+                                    "start": 18,
+                                    "end": 21,
+                                    "real_value": "rồi",
+                                    "is_required": "required"
+                                }
+                            ]
+                        }
+                    }
+                ]
             ],
             "decision": "yes",
             "confidence": 1.0,
             "confidence_channel": {
-                "2": 1.0,
-                "1": 1.0
+                "1": 1.0,
+                "2": 1.0
             },
             "position": [
                 {
-                    "index": 27,
+                    "index": 12,
                     "channel": 1,
-                    "text": "như vầy như em nói cho chị như vầy em chỉ để cho mình chậm nhất trước 5 giờ chiều nay chị không đóng được 1 kỳ tương đương với 1700000 thì bên em sẽ tiến hành theo quy định gửi đơn về địa phương của mình để xử lý nợ luôn chị nha cám ơn chị ạ",
+                    "text": "anh phải đóng đủ tiền nó có không tính là trễ cho anh anh còn thiếu 2944000 hả anh",
                     "intents": [
                         "ask_payment_info"
                     ],
                     "entities": {
                         "payment_amount": [
                             {
-                                "start": 127,
-                                "end": 134,
-                                "value": "1700000",
-                                "real_value": "1700000",
+                                "start": 68,
+                                "end": 75,
+                                "value": "2944000",
+                                "real_value": "2944000",
+                                "entity": "payment_amount",
+                                "subentities": [],
+                                "is_required": "required"
+                            }
+                        ],
+                        "payment_amount_word": [
+                            {
+                                "start": 9,
+                                "end": 16,
+                                "value": "đóng đủ",
+                                "real_value": "đóng đủ",
+                                "entity": "payment_amount_word",
+                                "subentities": "None",
+                                "is_required": "required"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "index": 19,
+                    "channel": 2,
+                    "text": "30000000 đúng",
+                    "intents": [],
+                    "entities": {
+                        "customer_confirm_word": [
+                            {
+                                "entity": "customer_confirm_word",
+                                "value": "đúng",
+                                "start": 9,
+                                "end": 13,
+                                "real_value": "đúng",
+                                "is_required": "required"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "index": 36,
+                    "channel": 1,
+                    "text": "dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha",
+                    "intents": [
+                        "ask_payment_info"
+                    ],
+                    "entities": {
+                        "payment_amount": [
+                            {
+                                "start": 65,
+                                "end": 72,
+                                "value": "2944000",
+                                "real_value": "2944000",
                                 "entity": "payment_amount",
                                 "subentities": [],
                                 "is_required": "required"
@@ -86,26 +231,65 @@ data = [{
                     }
                 },
                 {
-                    "index": 28,
+                    "index": 37,
                     "channel": 2,
-                    "text": "dạ vâng ạ dạ vâng ạ",
+                    "text": "à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á",
                     "intents": [],
                     "entities": {
                         "customer_confirm_word": [
                             {
                                 "entity": "customer_confirm_word",
-                                "value": "dạ",
+                                "value": "rồi",
+                                "start": 2,
+                                "end": 5,
+                                "real_value": "rồi",
+                                "is_required": "required"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "index": 40,
+                    "channel": 1,
+                    "text": "dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha",
+                    "intents": [
+                        "ask_payment_info"
+                    ],
+                    "entities": {
+                        "payment_amount": [
+                            {
+                                "start": 31,
+                                "end": 38,
+                                "value": "2944000",
+                                "real_value": "2944000",
+                                "entity": "payment_amount",
+                                "subentities": [],
+                                "is_required": "required"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "index": 41,
+                    "channel": 2,
+                    "text": "ờ đâu có biết đâu rồi cám ơn em",
+                    "intents": [],
+                    "entities": {
+                        "customer_confirm_word": [
+                            {
+                                "entity": "customer_confirm_word",
+                                "value": "ờ",
                                 "start": 0,
-                                "end": 2,
-                                "real_value": "dạ",
+                                "end": 1,
+                                "real_value": "ờ",
                                 "is_required": "required"
                             },
                             {
                                 "entity": "customer_confirm_word",
-                                "value": "dạ",
-                                "start": 10,
-                                "end": 12,
-                                "real_value": "dạ",
+                                "value": "rồi",
+                                "start": 18,
+                                "end": 21,
+                                "real_value": "rồi",
                                 "is_required": "required"
                             }
                         ]
@@ -115,107 +299,126 @@ data = [{
             "slots": {
                 "payment_amount": [
                     {
-                        "index": 27,
+                        "index": 12,
                         "value": [
-                            "1700000"
-                        ],
-                        "real_value": [
-                            "1700000"
+                            "2944000"
+                        ]
+                    },
+                    {
+                        "index": 36,
+                        "value": [
+                            "2944000"
+                        ]
+                    },
+                    {
+                        "index": 40,
+                        "value": [
+                            "2944000"
+                        ]
+                    }
+                ],
+                "payment_amount_word": [
+                    {
+                        "index": 12,
+                        "value": [
+                            "đóng đủ"
                         ]
                     }
                 ],
                 "customer_confirm_word": [
                     {
-                        "index": 28,
+                        "index": 19,
                         "value": [
-                            "dạ",
-                            "dạ"
-                        ],
-                        "real_value": [
-                            "dạ",
-                            "dạ"
+                            "đúng"
+                        ]
+                    },
+                    {
+                        "index": 37,
+                        "value": [
+                            "rồi"
+                        ]
+                    },
+                    {
+                        "index": 41,
+                        "value": [
+                            "ờ",
+                            "rồi"
                         ]
                     }
                 ]
             },
-            "position_range_index": [
-                27,
-                28
-            ],
-            "position_condition": [
-                27,
-                28
-            ],
-            "task": "compare"
+            "task": "compare_beta"
         },
         "askPaymentDatetime": {
             "evaluate": "yes",
             "evaluate_channel": {
-                "2": "yes",
-                "1": "yes"
+                "1": "yes",
+                "2": "yes"
             },
             "decision_position": [
-                {
-                    "index": 14,
-                    "channel": 1,
-                    "text": "còn mà chị nói tới 15 tháng chị mới đóng đóng là em nghĩ là chị cũng không có kịp phải đi đóng nữa",
-                    "intents": [
-                        "ask_payment_info"
-                    ],
-                    "entities": {
-                        "payment_datetime": [
-                            {
-                                "start": 19,
-                                "end": 21,
-                                "value": "15",
-                                "real_value": "15",
-                                "entity": "payment_datetime",
-                                "subentities": [],
-                                "is_required": "required"
-                            }
-                        ]
+                [
+                    {
+                        "index": 36,
+                        "channel": 1,
+                        "text": "dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha",
+                        "intents": [
+                            "ask_payment_info"
+                        ],
+                        "entities": {
+                            "payment_datetime": [
+                                {
+                                    "start": 37,
+                                    "end": 44,
+                                    "value": "hôm nay",
+                                    "real_value": "hôm nay",
+                                    "entity": "payment_datetime",
+                                    "subentities": [],
+                                    "is_required": "required"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "index": 37,
+                        "channel": 2,
+                        "text": "à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á",
+                        "intents": [],
+                        "entities": {
+                            "customer_confirm_word": [
+                                {
+                                    "entity": "customer_confirm_word",
+                                    "value": "rồi",
+                                    "start": 2,
+                                    "end": 5,
+                                    "real_value": "rồi",
+                                    "is_required": "required"
+                                }
+                            ]
+                        }
                     }
-                },
-                {
-                    "index": 15,
-                    "channel": 2,
-                    "text": "ừ chắc cũng để em tất toán hết luôn chứ",
-                    "intents": [],
-                    "entities": {
-                        "customer_confirm_word": [
-                            {
-                                "entity": "customer_confirm_word",
-                                "value": "ừ",
-                                "start": 0,
-                                "end": 1,
-                                "real_value": "ừ",
-                                "is_required": "required"
-                            }
-                        ]
-                    }
-                }
+                ]
             ],
             "decision": "yes",
             "confidence": 1.0,
             "confidence_channel": {
-                "2": 1.0,
-                "1": 1.0
+                "1": 1.0,
+                "2": 1.0
             },
             "position": [
                 {
-                    "index": 14,
+                    "index": 36,
                     "channel": 1,
-                    "text": "còn mà chị nói tới 15 tháng chị mới đóng đóng là em nghĩ là chị cũng không có kịp phải đi đóng nữa",
+                    "text": "dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha",
                     "intents": [
                         "ask_payment_info"
                     ],
                     "entities": {
                         "payment_datetime": [
                             {
-                                "start": 19,
-                                "end": 21,
-                                "value": "15",
-                                "real_value": "15",
+                                "start": 37,
+                                "end": 44,
+                                "value": "hôm nay",
+                                "real_value": "hôm nay",
                                 "entity": "payment_datetime",
                                 "subentities": [],
                                 "is_required": "required"
@@ -224,18 +427,18 @@ data = [{
                     }
                 },
                 {
-                    "index": 15,
+                    "index": 37,
                     "channel": 2,
-                    "text": "ừ chắc cũng để em tất toán hết luôn chứ",
+                    "text": "à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á",
                     "intents": [],
                     "entities": {
                         "customer_confirm_word": [
                             {
                                 "entity": "customer_confirm_word",
-                                "value": "ừ",
-                                "start": 0,
-                                "end": 1,
-                                "real_value": "ừ",
+                                "value": "rồi",
+                                "start": 2,
+                                "end": 5,
+                                "real_value": "rồi",
                                 "is_required": "required"
                             }
                         ]
@@ -245,38 +448,41 @@ data = [{
             "slots": {
                 "payment_datetime": [
                     {
-                        "index": 14,
+                        "index": 36,
                         "value": [
-                            "15"
-                        ],
-                        "real_value": [
-                            "15"
+                            "hôm nay"
                         ]
                     }
                 ],
                 "customer_confirm_word": [
                     {
-                        "index": 15,
+                        "index": 37,
                         "value": [
-                            "ừ"
-                        ],
-                        "real_value": [
-                            "ừ"
+                            "rồi"
                         ]
                     }
                 ]
             },
-            "position_range_index": [
-                14,
-                15
-            ],
-            "position_condition": [
-                14,
-                15
-            ],
-            "task": "compare"
+            "task": "compare_beta"
         },
         "askPaymentMethod": {
+            "evaluate": "no",
+            "evaluate_channel": {
+                "1": "no",
+                "2": "no"
+            },
+            "decision_position": [],
+            "decision": "no",
+            "confidence": 0.0,
+            "confidence_channel": {
+                "1": 0.0,
+                "2": 0.0
+            },
+            "position": [],
+            "slots": {},
+            "task": "compare_beta"
+        },
+        "cusProvidePaymentAmount": {
             "evaluate": "yes",
             "evaluate_channel": {
                 "2": "yes",
@@ -284,50 +490,46 @@ data = [{
             },
             "decision_position": [
                 {
-                    "index": 18,
-                    "channel": 1,
-                    "text": "cái này là chị vay nợ bên ngân hàng là chị vay trả góp là tháng chị trả tiền tháng chứ không phải gộp 1 lần chị trả ví dụ như hiện tại chị đang trả đầy đủ bên ngân hàng bên em nhưng mà chị có nhu cầu chị thanh lý luôn thì ok còn đây là không có chuyện mà có nghĩa là",
+                    "index": 7,
+                    "channel": 2,
+                    "text": "anh đóng ngày 51373000 rồi mà",
                     "intents": [
-                        "ask_payment_info"
+                        "customer_inform_already_paid"
                     ],
                     "entities": {
-                        "payment_method": [
+                        "customer_amount": [
                             {
-                                "entity": "payment_method",
-                                "value": "ngân hàng",
-                                "start": 26,
-                                "end": 35,
-                                "real_value": "ngân hàng",
-                                "is_required": "required"
-                            },
-                            {
-                                "entity": "payment_method",
-                                "value": "ngân hàng",
-                                "start": 159,
-                                "end": 168,
-                                "real_value": "ngân hàng",
+                                "start": 14,
+                                "end": 22,
+                                "value": "51373000",
+                                "real_value": "51373000",
+                                "entity": "customer_amount",
+                                "subentities": [],
                                 "is_required": "required"
                             }
                         ]
                     }
                 },
                 {
-                    "index": 19,
-                    "channel": 2,
-                    "text": "dạ",
+                    "index": 8,
+                    "channel": 1,
+                    "text": "thì anh đóng 1",
                     "intents": [],
-                    "entities": {
-                        "customer_confirm_word": [
-                            {
-                                "entity": "customer_confirm_word",
-                                "value": "dạ",
-                                "start": 0,
-                                "end": 2,
-                                "real_value": "dạ",
-                                "is_required": "required"
-                            }
-                        ]
-                    }
+                    "entities": {}
+                },
+                {
+                    "index": 9,
+                    "channel": 2,
+                    "text": "coi lại",
+                    "intents": [],
+                    "entities": {}
+                },
+                {
+                    "index": 10,
+                    "channel": 1,
+                    "text": "anh ơi anh đóng 1703000 là nó thiếu tiền là nó trễ đúng đúng rồi anh anh phải đóng đủ tiền",
+                    "intents": [],
+                    "entities": {}
                 }
             ],
             "decision": "yes",
@@ -338,105 +540,72 @@ data = [{
             },
             "position": [
                 {
-                    "index": 18,
-                    "channel": 1,
-                    "text": "cái này là chị vay nợ bên ngân hàng là chị vay trả góp là tháng chị trả tiền tháng chứ không phải gộp 1 lần chị trả ví dụ như hiện tại chị đang trả đầy đủ bên ngân hàng bên em nhưng mà chị có nhu cầu chị thanh lý luôn thì ok còn đây là không có chuyện mà có nghĩa là",
+                    "index": 7,
+                    "channel": 2,
+                    "text": "anh đóng ngày 51373000 rồi mà",
                     "intents": [
-                        "ask_payment_info"
+                        "customer_inform_already_paid"
                     ],
                     "entities": {
-                        "payment_method": [
+                        "customer_amount": [
                             {
-                                "entity": "payment_method",
-                                "value": "ngân hàng",
-                                "start": 26,
-                                "end": 35,
-                                "real_value": "ngân hàng",
-                                "is_required": "required"
-                            },
-                            {
-                                "entity": "payment_method",
-                                "value": "ngân hàng",
-                                "start": 159,
-                                "end": 168,
-                                "real_value": "ngân hàng",
+                                "start": 14,
+                                "end": 22,
+                                "value": "51373000",
+                                "real_value": "51373000",
+                                "entity": "customer_amount",
+                                "subentities": [],
                                 "is_required": "required"
                             }
                         ]
                     }
                 },
                 {
-                    "index": 19,
-                    "channel": 2,
-                    "text": "dạ",
+                    "index": 8,
+                    "channel": 1,
+                    "text": "thì anh đóng 1",
                     "intents": [],
-                    "entities": {
-                        "customer_confirm_word": [
-                            {
-                                "entity": "customer_confirm_word",
-                                "value": "dạ",
-                                "start": 0,
-                                "end": 2,
-                                "real_value": "dạ",
-                                "is_required": "required"
-                            }
-                        ]
-                    }
+                    "entities": {}
+                },
+                {
+                    "index": 9,
+                    "channel": 2,
+                    "text": "coi lại",
+                    "intents": [],
+                    "entities": {}
+                },
+                {
+                    "index": 10,
+                    "channel": 1,
+                    "text": "anh ơi anh đóng 1703000 là nó thiếu tiền là nó trễ đúng đúng rồi anh anh phải đóng đủ tiền",
+                    "intents": [],
+                    "entities": {}
                 }
             ],
             "slots": {
-                "payment_method": [
+                "customer_amount": [
                     {
-                        "index": 18,
+                        "index": 7,
                         "value": [
-                            "ngân hàng",
-                            "ngân hàng"
+                            "51373000"
                         ],
                         "real_value": [
-                            "ngân hàng",
-                            "ngân hàng"
-                        ]
-                    }
-                ],
-                "customer_confirm_word": [
-                    {
-                        "index": 19,
-                        "value": [
-                            "dạ"
-                        ],
-                        "real_value": [
-                            "dạ"
+                            "51373000"
                         ]
                     }
                 ]
             },
             "position_range_index": [
-                18,
-                19
+                7,
+                10
             ],
             "position_condition": [
-                18,
-                19
+                7,
+                8,
+                9,
+                10,
+                11
             ],
-            "task": "compare"
-        },
-        "cusProvidePaymentAmount": {
-            "evaluate": "no",
-            "evaluate_channel": {
-                "2": "no",
-                "1": "no"
-            },
-            "decision_position": [],
-            "decision": "no",
-            "confidence": 0.0,
-            "confidence_channel": {
-                "2": 0.0,
-                "1": 0.0
-            },
-            "position": [],
-            "slots": {},
-            "position_range_index": "None",
-            "position_condition": [],
             "task": "compare"
         },
         "cusProvidePaymentDatetime": {
@@ -486,14 +655,14 @@ data = [{
                 {
                     "index": 0,
                     "channel": 1,
-                    "text": "<agent>: còn mà chị nói tới 15 tháng chị mới đóng đóng là em nghĩ là chị cũng không có kịp phải đi đóng nữa <customer>: ừ chắc cũng để em tất toán hết luôn chứ <agent>: là là phải xử lý tại nhà rồi <customer>: dạ <agent>: cái này là chị vay nợ bên ngân hàng là chị vay trả góp là tháng chị trả tiền tháng chứ không phải gộp 1 lần chị trả ví dụ như hiện tại chị đang trả đầy đủ bên ngân hàng bên em nhưng mà chị có nhu cầu chị thanh lý luôn thì ok còn đây là không có chuyện mà có nghĩa là <customer>: dạ <agent>: đâu đâu có chuyện mà chị đang nợ bên ngân hàng rồi đang thiếu bên ngân hàng 3 tháng chị nói chị không có tiền trả rồi tháng chị cũng không chị trả 1 lần luôn là người ta chịu đâu chị không không phải như vậy người ta đang nói về cái hợp đồng của chị là chị không còn khả năng xử lý nợ bên ngân hàng nữa hiện tại nó sẽ bắt buộc chị thanh lý luôn toàn bộ cái khoản nợ này ví dụ như em gửi đơn về địa phương cho mình là mình xử lý luôn chứ chị không có kịp tới tháng chị đi đóng nữa đâu <customer>: dạ vâng <customer>: thì bây giờ cũng khó bây giờ em vẫn chưa lấy lương được <agent>: 3 kỳ có nghĩa là chị đang nợ bên người ta 3 tháng tháng 1 triệu bảy đi mà chị kêu là chị chưa có nhận lương chẳng lẽ chị nhận lương công ty 3 tháng 1 lần <customer>: có nghĩa là tháng em mấy tháng em có việc ở nhà nên là em chưa có ấy bên cho mình được <agent>: còn chị muốn thì em vẫn có thể gửi về công ty của chị về vấn đề lương bổng của chị như thế nào em vẫn có thể hỗ trợ cho chị được <customer>: dạ thôi cái đó vấn đề có vấn đề gì em định là tháng em sẽ tất toán hết luôn vì em cũng không có khả năng trả hàng tháng nữa được á <agent>: như vầy như em nói cho chị như vầy em chỉ để cho mình chậm nhất trước 5 giờ chiều nay chị không đóng được 1 kỳ tương đương với 1700000 thì bên em sẽ tiến hành theo quy định gửi đơn về địa phương của mình để xử lý nợ luôn chị nha cám ơn chị ạ <customer>: dạ vâng ạ dạ vâng ạ",
+                    "text": "<customer>: alo trong cái khoản trước đó hả <agent>: dạ anh ơi hôm trước thì anh hình như cái hồ sơ trước anh kết thúc rồi mà đúng không <customer>: đúng rồi kết thúc tháng 12 <agent>: dạ đúng rồi dạ đúng rồi là bắt đầu qua cái hồ sơ này là bắt đầu đóng cao gốc khoản lãi còn hồ sơ trước anh còn á thì có hồ sơ anh chỉ đóng lãi thôi <customer>: là nó sẽ ạ <agent>: còn bây giờ hồ sơ kết thúc rồi <customer>: à anh đâu có biết là tôi đóng cái nào trong cái kia còn cái nào để lại cái ai biết đâu <agent>: dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha <customer>: à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á <agent>: dạ dạ 1373000 dạ nãy giờ còn thiếu 2944000 á <customer>: rồi rồi rồi đúng rồi anh lại đóng cái đó 1373000 rồi <agent>: dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha <customer>: ờ đâu có biết đâu rồi cám ơn em <agent>: dạ rồi dạ rồi em cám ơn chào anh ạ <customer>: ừ",
                     "intents": [
-                        "silent"
+                        "client"
                     ],
                     "entities": {}
                 }
             ],
-            "decision": "silent",
+            "decision": "client",
             "confidence": 1.0,
             "confidence_channel": {
                 "1": 1.0
@@ -502,9 +671,9 @@ data = [{
                 {
                     "index": 0,
                     "channel": 1,
-                    "text": "<agent>: còn mà chị nói tới 15 tháng chị mới đóng đóng là em nghĩ là chị cũng không có kịp phải đi đóng nữa <customer>: ừ chắc cũng để em tất toán hết luôn chứ <agent>: là là phải xử lý tại nhà rồi <customer>: dạ <agent>: cái này là chị vay nợ bên ngân hàng là chị vay trả góp là tháng chị trả tiền tháng chứ không phải gộp 1 lần chị trả ví dụ như hiện tại chị đang trả đầy đủ bên ngân hàng bên em nhưng mà chị có nhu cầu chị thanh lý luôn thì ok còn đây là không có chuyện mà có nghĩa là <customer>: dạ <agent>: đâu đâu có chuyện mà chị đang nợ bên ngân hàng rồi đang thiếu bên ngân hàng 3 tháng chị nói chị không có tiền trả rồi tháng chị cũng không chị trả 1 lần luôn là người ta chịu đâu chị không không phải như vậy người ta đang nói về cái hợp đồng của chị là chị không còn khả năng xử lý nợ bên ngân hàng nữa hiện tại nó sẽ bắt buộc chị thanh lý luôn toàn bộ cái khoản nợ này ví dụ như em gửi đơn về địa phương cho mình là mình xử lý luôn chứ chị không có kịp tới tháng chị đi đóng nữa đâu <customer>: dạ vâng <customer>: thì bây giờ cũng khó bây giờ em vẫn chưa lấy lương được <agent>: 3 kỳ có nghĩa là chị đang nợ bên người ta 3 tháng tháng 1 triệu bảy đi mà chị kêu là chị chưa có nhận lương chẳng lẽ chị nhận lương công ty 3 tháng 1 lần <customer>: có nghĩa là tháng em mấy tháng em có việc ở nhà nên là em chưa có ấy bên cho mình được <agent>: còn chị muốn thì em vẫn có thể gửi về công ty của chị về vấn đề lương bổng của chị như thế nào em vẫn có thể hỗ trợ cho chị được <customer>: dạ thôi cái đó vấn đề có vấn đề gì em định là tháng em sẽ tất toán hết luôn vì em cũng không có khả năng trả hàng tháng nữa được á <agent>: như vầy như em nói cho chị như vầy em chỉ để cho mình chậm nhất trước 5 giờ chiều nay chị không đóng được 1 kỳ tương đương với 1700000 thì bên em sẽ tiến hành theo quy định gửi đơn về địa phương của mình để xử lý nợ luôn chị nha cám ơn chị ạ <customer>: dạ vâng ạ dạ vâng ạ",
+                    "text": "<customer>: alo trong cái khoản trước đó hả <agent>: dạ anh ơi hôm trước thì anh hình như cái hồ sơ trước anh kết thúc rồi mà đúng không <customer>: đúng rồi kết thúc tháng 12 <agent>: dạ đúng rồi dạ đúng rồi là bắt đầu qua cái hồ sơ này là bắt đầu đóng cao gốc khoản lãi còn hồ sơ trước anh còn á thì có hồ sơ anh chỉ đóng lãi thôi <customer>: là nó sẽ ạ <agent>: còn bây giờ hồ sơ kết thúc rồi <customer>: à anh đâu có biết là tôi đóng cái nào trong cái kia còn cái nào để lại cái ai biết đâu <agent>: dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha <customer>: à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á <agent>: dạ dạ 1373000 dạ nãy giờ còn thiếu 2944000 á <customer>: rồi rồi rồi đúng rồi anh lại đóng cái đó 1373000 rồi <agent>: dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha <customer>: ờ đâu có biết đâu rồi cám ơn em <agent>: dạ rồi dạ rồi em cám ơn chào anh ạ <customer>: ừ",
                     "intents": [
-                        "silent"
+                        "client"
                     ],
                     "entities": {}
                 }
@@ -528,7 +697,7 @@ data = [{
                 {
                     "index": 0,
                     "channel": 1,
-                    "text": "<agent>: còn mà chị nói tới 15 tháng chị mới đóng đóng là em nghĩ là chị cũng không có kịp phải đi đóng nữa <customer>: ừ chắc cũng để em tất toán hết luôn chứ <agent>: là là phải xử lý tại nhà rồi <customer>: dạ <agent>: cái này là chị vay nợ bên ngân hàng là chị vay trả góp là tháng chị trả tiền tháng chứ không phải gộp 1 lần chị trả ví dụ như hiện tại chị đang trả đầy đủ bên ngân hàng bên em nhưng mà chị có nhu cầu chị thanh lý luôn thì ok còn đây là không có chuyện mà có nghĩa là <customer>: dạ <agent>: đâu đâu có chuyện mà chị đang nợ bên ngân hàng rồi đang thiếu bên ngân hàng 3 tháng chị nói chị không có tiền trả rồi tháng chị cũng không chị trả 1 lần luôn là người ta chịu đâu chị không không phải như vậy người ta đang nói về cái hợp đồng của chị là chị không còn khả năng xử lý nợ bên ngân hàng nữa hiện tại nó sẽ bắt buộc chị thanh lý luôn toàn bộ cái khoản nợ này ví dụ như em gửi đơn về địa phương cho mình là mình xử lý luôn chứ chị không có kịp tới tháng chị đi đóng nữa đâu <customer>: dạ vâng <customer>: thì bây giờ cũng khó bây giờ em vẫn chưa lấy lương được <agent>: 3 kỳ có nghĩa là chị đang nợ bên người ta 3 tháng tháng 1 triệu bảy đi mà chị kêu là chị chưa có nhận lương chẳng lẽ chị nhận lương công ty 3 tháng 1 lần <customer>: có nghĩa là tháng em mấy tháng em có việc ở nhà nên là em chưa có ấy bên cho mình được <agent>: còn chị muốn thì em vẫn có thể gửi về công ty của chị về vấn đề lương bổng của chị như thế nào em vẫn có thể hỗ trợ cho chị được <customer>: dạ thôi cái đó vấn đề có vấn đề gì em định là tháng em sẽ tất toán hết luôn vì em cũng không có khả năng trả hàng tháng nữa được á <agent>: như vầy như em nói cho chị như vầy em chỉ để cho mình chậm nhất trước 5 giờ chiều nay chị không đóng được 1 kỳ tương đương với 1700000 thì bên em sẽ tiến hành theo quy định gửi đơn về địa phương của mình để xử lý nợ luôn chị nha cám ơn chị ạ <customer>: dạ vâng ạ dạ vâng ạ",
+                    "text": "<customer>: alo trong cái khoản trước đó hả <agent>: dạ anh ơi hôm trước thì anh hình như cái hồ sơ trước anh kết thúc rồi mà đúng không <customer>: đúng rồi kết thúc tháng 12 <agent>: dạ đúng rồi dạ đúng rồi là bắt đầu qua cái hồ sơ này là bắt đầu đóng cao gốc khoản lãi còn hồ sơ trước anh còn á thì có hồ sơ anh chỉ đóng lãi thôi <customer>: là nó sẽ ạ <agent>: còn bây giờ hồ sơ kết thúc rồi <customer>: à anh đâu có biết là tôi đóng cái nào trong cái kia còn cái nào để lại cái ai biết đâu <agent>: dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha <customer>: à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á <agent>: dạ dạ 1373000 dạ nãy giờ còn thiếu 2944000 á <customer>: rồi rồi rồi đúng rồi anh lại đóng cái đó 1373000 rồi <agent>: dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha <customer>: ờ đâu có biết đâu rồi cám ơn em <agent>: dạ rồi dạ rồi em cám ơn chào anh ạ <customer>: ừ",
                     "intents": [
                         "willpay"
                     ],
@@ -544,7 +713,7 @@ data = [{
                 {
                     "index": 0,
                     "channel": 1,
-                    "text": "<agent>: còn mà chị nói tới 15 tháng chị mới đóng đóng là em nghĩ là chị cũng không có kịp phải đi đóng nữa <customer>: ừ chắc cũng để em tất toán hết luôn chứ <agent>: là là phải xử lý tại nhà rồi <customer>: dạ <agent>: cái này là chị vay nợ bên ngân hàng là chị vay trả góp là tháng chị trả tiền tháng chứ không phải gộp 1 lần chị trả ví dụ như hiện tại chị đang trả đầy đủ bên ngân hàng bên em nhưng mà chị có nhu cầu chị thanh lý luôn thì ok còn đây là không có chuyện mà có nghĩa là <customer>: dạ <agent>: đâu đâu có chuyện mà chị đang nợ bên ngân hàng rồi đang thiếu bên ngân hàng 3 tháng chị nói chị không có tiền trả rồi tháng chị cũng không chị trả 1 lần luôn là người ta chịu đâu chị không không phải như vậy người ta đang nói về cái hợp đồng của chị là chị không còn khả năng xử lý nợ bên ngân hàng nữa hiện tại nó sẽ bắt buộc chị thanh lý luôn toàn bộ cái khoản nợ này ví dụ như em gửi đơn về địa phương cho mình là mình xử lý luôn chứ chị không có kịp tới tháng chị đi đóng nữa đâu <customer>: dạ vâng <customer>: thì bây giờ cũng khó bây giờ em vẫn chưa lấy lương được <agent>: 3 kỳ có nghĩa là chị đang nợ bên người ta 3 tháng tháng 1 triệu bảy đi mà chị kêu là chị chưa có nhận lương chẳng lẽ chị nhận lương công ty 3 tháng 1 lần <customer>: có nghĩa là tháng em mấy tháng em có việc ở nhà nên là em chưa có ấy bên cho mình được <agent>: còn chị muốn thì em vẫn có thể gửi về công ty của chị về vấn đề lương bổng của chị như thế nào em vẫn có thể hỗ trợ cho chị được <customer>: dạ thôi cái đó vấn đề có vấn đề gì em định là tháng em sẽ tất toán hết luôn vì em cũng không có khả năng trả hàng tháng nữa được á <agent>: như vầy như em nói cho chị như vầy em chỉ để cho mình chậm nhất trước 5 giờ chiều nay chị không đóng được 1 kỳ tương đương với 1700000 thì bên em sẽ tiến hành theo quy định gửi đơn về địa phương của mình để xử lý nợ luôn chị nha cám ơn chị ạ <customer>: dạ vâng ạ dạ vâng ạ",
+                    "text": "<customer>: alo trong cái khoản trước đó hả <agent>: dạ anh ơi hôm trước thì anh hình như cái hồ sơ trước anh kết thúc rồi mà đúng không <customer>: đúng rồi kết thúc tháng 12 <agent>: dạ đúng rồi dạ đúng rồi là bắt đầu qua cái hồ sơ này là bắt đầu đóng cao gốc khoản lãi còn hồ sơ trước anh còn á thì có hồ sơ anh chỉ đóng lãi thôi <customer>: là nó sẽ ạ <agent>: còn bây giờ hồ sơ kết thúc rồi <customer>: à anh đâu có biết là tôi đóng cái nào trong cái kia còn cái nào để lại cái ai biết đâu <agent>: dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha <customer>: à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á <agent>: dạ dạ 1373000 dạ nãy giờ còn thiếu 2944000 á <customer>: rồi rồi rồi đúng rồi anh lại đóng cái đó 1373000 rồi <agent>: dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha <customer>: ờ đâu có biết đâu rồi cám ơn em <agent>: dạ rồi dạ rồi em cám ơn chào anh ạ <customer>: ừ",
                     "intents": [
                         "willpay"
                     ],
@@ -563,66 +732,21 @@ data = [{
         },
         "criterias_order": [
             {
-                "criteria_name": "askPaymentDatetime",
+                "criteria_name": "cusProvidePaymentAmount",
                 "decision": "yes",
                 "position_range_index": [
-                    14,
-                    15
+                    7,
+                    10
                 ],
                 "slots": {
-                    "payment_datetime": [
+                    "customer_amount": [
                         {
-                            "index": 14,
+                            "index": 7,
                             "value": [
-                                "15"
+                                "51373000"
                             ],
                             "real_value": [
-                                "15"
-                            ]
-                        }
-                    ],
-                    "customer_confirm_word": [
-                        {
-                            "index": 15,
-                            "value": [
-                                "ừ"
-                            ],
-                            "real_value": [
-                                "ừ"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "criteria_name": "askPaymentMethod",
-                "decision": "yes",
-                "position_range_index": [
-                    18,
-                    19
-                ],
-                "slots": {
-                    "payment_method": [
-                        {
-                            "index": 18,
-                            "value": [
-                                "ngân hàng",
-                                "ngân hàng"
-                            ],
-                            "real_value": [
-                                "ngân hàng",
-                                "ngân hàng"
-                            ]
-                        }
-                    ],
-                    "customer_confirm_word": [
-                        {
-                            "index": 19,
-                            "value": [
-                                "dạ"
-                            ],
-                            "real_value": [
-                                "dạ"
+                                "51373000"
                             ]
                         }
                     ]
@@ -631,39 +755,84 @@ data = [{
             {
                 "criteria_name": "askPaymentAmount",
                 "decision": "yes",
-                "position_range_index": [
-                    27,
-                    28
-                ],
+                "position_range_index": "",
                 "slots": {
                     "payment_amount": [
                         {
-                            "index": 27,
+                            "index": 12,
                             "value": [
-                                "1700000"
-                            ],
-                            "real_value": [
-                                "1700000"
+                                "2944000"
+                            ]
+                        },
+                        {
+                            "index": 36,
+                            "value": [
+                                "2944000"
+                            ]
+                        },
+                        {
+                            "index": 40,
+                            "value": [
+                                "2944000"
+                            ]
+                        }
+                    ],
+                    "payment_amount_word": [
+                        {
+                            "index": 12,
+                            "value": [
+                                "đóng đủ"
                             ]
                         }
                     ],
                     "customer_confirm_word": [
                         {
-                            "index": 28,
+                            "index": 19,
                             "value": [
-                                "dạ",
-                                "dạ"
-                            ],
-                            "real_value": [
-                                "dạ",
-                                "dạ"
+                                "đúng"
+                            ]
+                        },
+                        {
+                            "index": 37,
+                            "value": [
+                                "rồi"
+                            ]
+                        },
+                        {
+                            "index": 41,
+                            "value": [
+                                "ờ",
+                                "rồi"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "criteria_name": "askPaymentDatetime",
+                "decision": "yes",
+                "position_range_index": "",
+                "slots": {
+                    "payment_datetime": [
+                        {
+                            "index": 36,
+                            "value": [
+                                "hôm nay"
+                            ]
+                        }
+                    ],
+                    "customer_confirm_word": [
+                        {
+                            "index": 37,
+                            "value": [
+                                "rồi"
                             ]
                         }
                     ]
                 }
             }
         ]
-},]
+    },]
 
 result_data = []
 
@@ -691,7 +860,7 @@ for i in data:
         })
     else:
         if (i["callClassifyAI"]["decision"]) == "client":
-            if (i["callResultAI"]["decision"]) == "willpay":
+            if (i["callResultAI"]["decision"]) == "willpay" or (i["callResultAI"]["decision"]) == "paid":
                 if (i["cusProvidePaymentAmount"]["decision"]) == "yes" and (i["cusProvidePaymentDatetime"]["decision"]) == "yes" and (i["cusProvidePaymentMethod"]["decision"]) == "yes":
                     result_data.append({
                         "type": "yes 30 - 3/3 cus",
@@ -740,6 +909,42 @@ for i in data:
                         "file_name": i["fileName"],
                         "result": "Yes_20"
                     })
+                elif (i["cusProvidePaymentAmount"]["decision"]) == "yes" and (i["askPaymentDatetime"]["decision"]) == "yes":
+                    result_data.append({
+                        "type": "yes 20 - 1/3 cus - 1/3 agent.1",
+                        "file_name": i["fileName"],
+                        "result": "Yes_20"
+                    })
+                elif (i["cusProvidePaymentAmount"]["decision"]) == "yes" and (i["askPaymentMethod"]["decision"]) == "yes":
+                    result_data.append({
+                        "type": "yes 20 - 1/3 cus - 1/3 agent.2",
+                        "file_name": i["fileName"],
+                        "result": "Yes_20"
+                    })
+                elif (i["cusProvidePaymentDatetime"]["decision"]) == "yes" and (i["askPaymentAmount"]["decision"]) == "yes":
+                    result_data.append({
+                        "type": "yes 20 - 1/3 cus - 1/3 agent.3",
+                        "file_name": i["fileName"],
+                        "result": "Yes_20"
+                    })
+                elif (i["cusProvidePaymentDatetime"]["decision"]) == "yes" and (i["askPaymentMethod"]["decision"]) == "yes":
+                    result_data.append({
+                        "type": "yes 20 - 1/3 cus - 1/3 agent.4",
+                        "file_name": i["fileName"],
+                        "result": "Yes_20"
+                    })
+                elif (i["cusProvidePaymentMethod"]["decision"]) == "yes" and (i["askPaymentAmount"]["decision"]) == "yes":
+                    result_data.append({
+                        "type": "yes 20 - 1/3 cus - 1/3 agent.5",
+                        "file_name": i["fileName"],
+                        "result": "Yes_20"
+                    })
+                elif (i["cusProvidePaymentMethod"]["decision"]) == "yes" and (i["askPaymentDatetime"]["decision"]) == "yes":
+                    result_data.append({
+                        "type": "yes 20 - 1/3 cus - 1/3 agent.6",
+                        "file_name": i["fileName"],
+                        "result": "Yes_20"
+                    })
                 elif (i["cusProvidePaymentAmount"]["decision"]) == "yes" or (i["cusProvidePaymentDatetime"]["decision"]) == "yes" or (i["cusProvidePaymentMethod"]["decision"]) == "yes":
                     result_data.append({
                         "type": "yes 10 - 1/3 cus - 0/3 agent",
@@ -747,36 +952,43 @@ for i in data:
                         "result": "Yes_10"
                     })
                 else:
-                    if (i["askPaymentDatetime"]["decision"]) == "yes" and (i["askPaymentAmount"]["decision"]) == "yes" and (i["askPaymentMethod"]["decision"]) == " yes":
+                    if (i["askPaymentDatetime"]["decision"]) == "no":
                         result_data.append({
-                            "type": "yes 30 - 3/3 agent",
-                            "file_name": i["fileName"],
-                            "result": "Yes_30"
-                        })
-                    elif (i["askPaymentDatetime"]["decision"]) == "yes" and (i["askPaymentAmount"]["decision"]) == "yes":
-                        result_data.append({
-                            "type": "yes 20 - 2/3 agent.1",
-                            "file_name": i["fileName"],
-                            "result": "Yes_20"
-                        })
-                    elif (i["askPaymentDatetime"]["decision"]) == "yes" and (i["askPaymentMethod"]["decision"]) == "yes":
-                        result_data.append({
-                            "type": "yes 20 - 2/3 agent.2",
-                            "file_name": i["fileName"],
-                            "result": "Yes_20"
-                        })
-                    elif (i["askPaymentDatetime"]["decision"]) == "yes":
-                        result_data.append({
-                            "type": "yes 20 - 2/3 agent",
-                            "file_name": i["fileName"],
-                            "result": "Yes_10"
-                        })
-                    else:
-                        result_data.append({
-                            "type": "fall_back",
+                            "type": "No-",
                             "file_name": i["fileName"],
                             "result": "No"
                         })
+                    else:
+                        if (i["askPaymentDatetime"]["decision"]) == "yes" and (i["askPaymentAmount"]["decision"]) == "yes" and (i["askPaymentMethod"]["decision"]) == "yes":
+                            result_data.append({
+                                "type": "yes 30 - 3/3 agent",
+                                "file_name": i["fileName"],
+                                "result": "Yes_30"
+                            })
+                        elif (i["askPaymentDatetime"]["decision"]) == "yes" and (i["askPaymentAmount"]["decision"]) == "yes":
+                            result_data.append({
+                                "type": "yes 20 - 2/3 agent.1",
+                                "file_name": i["fileName"],
+                                "result": "Yes_20"
+                            })
+                        elif (i["askPaymentDatetime"]["decision"]) == "yes" and (i["askPaymentMethod"]["decision"]) == "yes":
+                            result_data.append({
+                                "type": "yes 20 - 2/3 agent.2",
+                                "file_name": i["fileName"],
+                                "result": "Yes_20"
+                            })
+                        elif (i["askPaymentDatetime"]["decision"]) == "yes":
+                            result_data.append({
+                                "type": "yes 20 - 2/3 agent",
+                                "file_name": i["fileName"],
+                                "result": "Yes_10"
+                            })
+                        else:
+                            result_data.append({
+                                "type": "fall_back",
+                                "file_name": i["fileName"],
+                                "result": "No"
+                            })
             else:
                 result_data.append({
                     "type": "fall_back_nopay_&_paid",
