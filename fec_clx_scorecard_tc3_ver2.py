@@ -1,178 +1,199 @@
 data = [{
-    "fileName": "",
-    "agentChannel": 1,
-    "time_load_info": 0.1970810890197754,
-    "askCusDifficult": {
-        "evaluate": "no",
-        "evaluate_channel": {
-            "1": "no",
-            "2": "no"
-        },
-        "decision_position": [],
-        "decision": "no",
-        "confidence": 0.0,
-        "confidence_channel": {
-            "1": 0.0,
-            "2": 0.0
-        },
-        "position": [],
-        "slots": {},
-        "position_range_index": "null",
-        "position_condition": [],
-        "task": "compare"
-    },
-    "askLateReason": {
-        "evaluate": "yes",
-        "evaluate_channel": {
-            "1": "yes",
-            "2": "yes"
-        },
-        "decision_position": [
-            [
+        "fileName": "M8HUPHR6BH6LV256K11V606LUG0MVG10.mp3",
+        "agentChannel": 1,
+        "callClassifyAI": {
+            "evaluate": "yes",
+            "evaluate_channel": {
+                "1": "yes"
+            },
+            "decision_position": [
                 {
-                    "index": 56,
+                    "index": 0,
                     "channel": 1,
-                    "text": "à rồi thì học đi học về nha thì nhờ chú nhờ con nha là bảo với bố mẹ là à à bố mẹ đi làm về xong rồi ra thế giới di động hoặc là điện máy xanh gì ấy thanh toán cái khoản tiền trả góp cho bên chú nha",
+                    "text": "<customer>: alo alo <agent>: alo à cho hỏi số này phải là của anh nguyễn văn nam không ạ <customer>: ừ <customer>: đâu có đâu số này của cô cô ở giục mình mà <agent>: ủa cô nhục vậy là cô mới mua lại hả cô cái đuôi 273000 nè <customer>: nay có xài 10 năm có sim chính chủ <agent>: ủa xài 10 năm rồi hả vậy cô có quen ai tên tên phạm hữu nguyên không <customer>: ừ ừ <agent>: do cái số này nó làm tham chiếu trong hồ sơ của anh nguyên á nhưng mà mới hồi à <customer>: sao",
                     "intents": [
-                        "ask_cus_reason"
+                        "wrongnumber"
                     ],
                     "entities": {}
                 }
             ],
-            [
+            "decision": "wrongnumber",
+            "confidence": 1.0,
+            "confidence_channel": {
+                "1": 1.0
+            },
+            "position": [
                 {
-                    "index": 58,
+                    "index": 0,
                     "channel": 1,
-                    "text": "ừ bảo bố mẹ là bố mẹ có khoản nợ là bị chán hạn bị quá hạn của bên chú rồi nha bảo bố mẹ là đi làm về ra thanh toán luôn nha",
+                    "text": "<customer>: alo alo <agent>: alo à cho hỏi số này phải là của anh nguyễn văn nam không ạ <customer>: ừ <customer>: đâu có đâu số này của cô cô ở giục mình mà <agent>: ủa cô nhục vậy là cô mới mua lại hả cô cái đuôi 273000 nè <customer>: nay có xài 10 năm có sim chính chủ <agent>: ủa xài 10 năm rồi hả vậy cô có quen ai tên tên phạm hữu nguyên không <customer>: ừ ừ <agent>: do cái số này nó làm tham chiếu trong hồ sơ của anh nguyên á nhưng mà mới hồi à <customer>: sao",
                     "intents": [
-                        "ask_cus_reason"
+                        "wrongnumber"
                     ],
                     "entities": {}
                 }
-            ]
-        ],
-        "decision": "yes",
-        "confidence": 1.0,
-        "confidence_channel": {
-            "1": 1.0,
-            "2": 1.0
+            ],
+            "slots": {},
+            "position_range_index": [
+                0,
+                0
+            ],
+            "position_condition": [
+                0
+            ],
+            "task": "compare"
         },
-        "position": [
-            {
-                "index": 56,
-                "channel": 1,
-                "text": "à rồi thì học đi học về nha thì nhờ chú nhờ con nha là bảo với bố mẹ là à à bố mẹ đi làm về xong rồi ra thế giới di động hoặc là điện máy xanh gì ấy thanh toán cái khoản tiền trả góp cho bên chú nha",
-                "intents": [
-                    "ask_cus_reason"
-                ],
-                "entities": {}
+        "callResultAI": {
+            "evaluate": "yes",
+            "evaluate_channel": {
+                "1": "yes"
             },
-            {
-                "index": 58,
-                "channel": 1,
-                "text": "ừ bảo bố mẹ là bố mẹ có khoản nợ là bị chán hạn bị quá hạn của bên chú rồi nha bảo bố mẹ là đi làm về ra thanh toán luôn nha",
-                "intents": [
-                    "ask_cus_reason"
-                ],
-                "entities": {}
-            }
-        ],
-        "slots": {},
-        "task": "compare_beta"
-    },
-    "callClassifyAI": {
-        "evaluate": "yes",
-        "evaluate_channel": {
-            "1": "yes"
+            "decision_position": [
+                {
+                    "index": 0,
+                    "channel": 1,
+                    "text": "<agent>: mới gần đây hồi năm hai không hai không hai mốt thôi <customer>: không không có chính chủ rồi mà cái cái mã không biết cái ông này ông có làm gì không cô không biết mà điện tới hỏi cô biết có biết phạm nguyên thủ lồ không <agent>: ừ ừ <customer>: ừ <agent>: là <customer>: cô cô cân nhắc à à <agent>: dạ nhưng mà cô cô cũng ở quảng trị luôn hả cô vĩnh linh quảng trị á <customer>: có <agent>: bây giờ khả năng <customer>: có người hứa huế ở thành phố huế nhưng mà ở giục mỹ cách đây bốn mươi sáu năm rồi <agent>: dạ rồi vậy có lẽ nhầm số rồi để em kiểm tra lại nha rồi cảm ơn cô nha <customer>: ừ ừ ừ ở khánh hòa á <agent>: dạ rồi cám ơn cô <customer>: ừ <agent>: có nghĩa là bây giờ mình không hỗ trợ cho mình 50% thì giải quyết được",
+                    "intents": [
+                        "nopay"
+                    ],
+                    "entities": {}
+                }
+            ],
+            "decision": "nopay",
+            "confidence": 1.0,
+            "confidence_channel": {
+                "1": 1.0
+            },
+            "position": [
+                {
+                    "index": 0,
+                    "channel": 1,
+                    "text": "<agent>: mới gần đây hồi năm hai không hai không hai mốt thôi <customer>: không không có chính chủ rồi mà cái cái mã không biết cái ông này ông có làm gì không cô không biết mà điện tới hỏi cô biết có biết phạm nguyên thủ lồ không <agent>: ừ ừ <customer>: ừ <agent>: là <customer>: cô cô cân nhắc à à <agent>: dạ nhưng mà cô cô cũng ở quảng trị luôn hả cô vĩnh linh quảng trị á <customer>: có <agent>: bây giờ khả năng <customer>: có người hứa huế ở thành phố huế nhưng mà ở giục mỹ cách đây bốn mươi sáu năm rồi <agent>: dạ rồi vậy có lẽ nhầm số rồi để em kiểm tra lại nha rồi cảm ơn cô nha <customer>: ừ ừ ừ ở khánh hòa á <agent>: dạ rồi cám ơn cô <customer>: ừ <agent>: có nghĩa là bây giờ mình không hỗ trợ cho mình 50% thì giải quyết được",
+                    "intents": [
+                        "nopay"
+                    ],
+                    "entities": {}
+                }
+            ],
+            "slots": {},
+            "position_range_index": [
+                0,
+                0
+            ],
+            "position_condition": [
+                0
+            ],
+            "task": "compare"
         },
-        "decision_position": [
-            {
-                "index": 0,
-                "channel": 1,
-                "text": "<customer>: bận chờ tí <agent>: 1 giờ là chắc là 5 giờ con mới đi học về phải không <customer>: dạ đúng rồi <agent>: à rồi thì học đi học về nha thì nhờ chú nhờ con nha là bảo với bố mẹ là à à bố mẹ đi làm về xong rồi ra thế giới di động hoặc là điện máy xanh gì ấy thanh toán cái khoản tiền trả góp cho bên chú nha <customer>: dạ đúng rồi <agent>: ừ bảo bố mẹ là bố mẹ có khoản nợ là bị chán hạn bị quá hạn của bên chú rồi nha bảo bố mẹ là đi làm về ra thanh toán luôn nha <customer>: dạ dạ <agent>: ừ vậy thôi cứ cảm ơn nhiều nhá <customer>: dạ <agent>: ừ <customer>: cúp máy cái chú <agent>: à hả <customer>: cúp máy chứ <agent>: ờ ừ ừ văn quốc anh phúc <customer>: dạ",
-                "intents": [
-                    "ec"
-                ],
-                "entities": {}
-            }
-        ],
-        "decision": "ec",
-        "confidence": 1.0,
-        "confidence_channel": {
-            "1": 1.0
+        "askPaymentAmount": {
+            "evaluate": "no",
+            "evaluate_channel": {
+                "1": "no",
+                "2": "no"
+            },
+            "decision_position": [],
+            "decision": "no",
+            "confidence": 0.0,
+            "confidence_channel": {
+                "1": 0.0,
+                "2": 0.0
+            },
+            "position": [],
+            "slots": {},
+            "task": "compare_beta"
         },
-        "position": [
-            {
-                "index": 0,
-                "channel": 1,
-                "text": "<customer>: bận chờ tí <agent>: 1 giờ là chắc là 5 giờ con mới đi học về phải không <customer>: dạ đúng rồi <agent>: à rồi thì học đi học về nha thì nhờ chú nhờ con nha là bảo với bố mẹ là à à bố mẹ đi làm về xong rồi ra thế giới di động hoặc là điện máy xanh gì ấy thanh toán cái khoản tiền trả góp cho bên chú nha <customer>: dạ đúng rồi <agent>: ừ bảo bố mẹ là bố mẹ có khoản nợ là bị chán hạn bị quá hạn của bên chú rồi nha bảo bố mẹ là đi làm về ra thanh toán luôn nha <customer>: dạ dạ <agent>: ừ vậy thôi cứ cảm ơn nhiều nhá <customer>: dạ <agent>: ừ <customer>: cúp máy cái chú <agent>: à hả <customer>: cúp máy chứ <agent>: ờ ừ ừ văn quốc anh phúc <customer>: dạ",
-                "intents": [
-                    "ec"
-                ],
-                "entities": {}
-            }
-        ],
-        "slots": {},
-        "position_range_index": [
-            0,
-            0
-        ],
-        "position_condition": [
-            0
-        ],
-        "task": "compare"
-    },
-    "callResultAI": {
-        "evaluate": "yes",
-        "evaluate_channel": {
-            "1": "yes"
+        "askPaymentDatetime": {
+            "evaluate": "no",
+            "evaluate_channel": {
+                "1": "no",
+                "2": "no"
+            },
+            "decision_position": [],
+            "decision": "no",
+            "confidence": 0.0,
+            "confidence_channel": {
+                "1": 0.0,
+                "2": 0.0
+            },
+            "position": [],
+            "slots": {},
+            "task": "compare_beta"
         },
-        "decision_position": [
-            {
-                "index": 0,
-                "channel": 1,
-                "text": "<customer>: bận chờ tí <agent>: 1 giờ là chắc là 5 giờ con mới đi học về phải không <customer>: dạ đúng rồi <agent>: à rồi thì học đi học về nha thì nhờ chú nhờ con nha là bảo với bố mẹ là à à bố mẹ đi làm về xong rồi ra thế giới di động hoặc là điện máy xanh gì ấy thanh toán cái khoản tiền trả góp cho bên chú nha <customer>: dạ đúng rồi <agent>: ừ bảo bố mẹ là bố mẹ có khoản nợ là bị chán hạn bị quá hạn của bên chú rồi nha bảo bố mẹ là đi làm về ra thanh toán luôn nha <customer>: dạ dạ <agent>: ừ vậy thôi cứ cảm ơn nhiều nhá <customer>: dạ <agent>: ừ <customer>: cúp máy cái chú <agent>: à hả <customer>: cúp máy chứ <agent>: ờ ừ ừ văn quốc anh phúc <customer>: dạ",
-                "intents": [
-                    "nopay"
-                ],
-                "entities": {}
-            }
-        ],
-        "decision": "nopay",
-        "confidence": 1.0,
-        "confidence_channel": {
-            "1": 1.0
+        "askPaymentMethod": {
+            "evaluate": "no",
+            "evaluate_channel": {
+                "1": "no",
+                "2": "no"
+            },
+            "decision_position": [],
+            "decision": "no",
+            "confidence": 0.0,
+            "confidence_channel": {
+                "1": 0.0,
+                "2": 0.0
+            },
+            "position": [],
+            "slots": {},
+            "task": "compare_beta"
         },
-        "position": [
-            {
-                "index": 0,
-                "channel": 1,
-                "text": "<customer>: bận chờ tí <agent>: 1 giờ là chắc là 5 giờ con mới đi học về phải không <customer>: dạ đúng rồi <agent>: à rồi thì học đi học về nha thì nhờ chú nhờ con nha là bảo với bố mẹ là à à bố mẹ đi làm về xong rồi ra thế giới di động hoặc là điện máy xanh gì ấy thanh toán cái khoản tiền trả góp cho bên chú nha <customer>: dạ đúng rồi <agent>: ừ bảo bố mẹ là bố mẹ có khoản nợ là bị chán hạn bị quá hạn của bên chú rồi nha bảo bố mẹ là đi làm về ra thanh toán luôn nha <customer>: dạ dạ <agent>: ừ vậy thôi cứ cảm ơn nhiều nhá <customer>: dạ <agent>: ừ <customer>: cúp máy cái chú <agent>: à hả <customer>: cúp máy chứ <agent>: ờ ừ ừ văn quốc anh phúc <customer>: dạ",
-                "intents": [
-                    "nopay"
-                ],
-                "entities": {}
-            }
-        ],
-        "slots": {},
-        "position_range_index": [
-            0,
-            0
-        ],
-        "position_condition": [
-            0
-        ],
-        "task": "compare"
-    },
-    "criterias_order": [
-        {
-            "criteria_name": "askLateReason",
-            "decision": "yes",
-            "position_range_index": "",
-            "slots": {}
+        "cusProvidePaymentAmount": {
+            "evaluate": "no",
+            "evaluate_channel": {
+                "2": "no",
+                "1": "no"
+            },
+            "decision_position": [],
+            "decision": "no",
+            "confidence": 0.0,
+            "confidence_channel": {
+                "2": 0.0,
+                "1": 0.0
+            },
+            "position": [],
+            "slots": {},
+            "position_range_index": "None",
+            "position_condition": [],
+            "task": "compare"
+        },
+        "cusProvidePaymentDatetime": {
+            "evaluate": "no",
+            "evaluate_channel": {
+                "2": "no",
+                "1": "no"
+            },
+            "decision_position": [],
+            "decision": "no",
+            "confidence": 0.0,
+            "confidence_channel": {
+                "2": 0.0,
+                "1": 0.0
+            },
+            "position": [],
+            "slots": {},
+            "position_range_index": "None",
+            "position_condition": [],
+            "task": "compare"
+        },
+        "cusProvidePaymentMethod": {
+            "evaluate": "no",
+            "evaluate_channel": {
+                "2": "no",
+                "1": "no"
+            },
+            "decision_position": [],
+            "decision": "no",
+            "confidence": 0.0,
+            "confidence_channel": {
+                "2": 0.0,
+                "1": 0.0
+            },
+            "position": [],
+            "slots": {},
+            "position_range_index": "None",
+            "position_condition": [],
+            "task": "compare"
         }
-    ]
-}]
+    },]
 
 result_data = []
 
@@ -185,7 +206,7 @@ for i in data:
             "result": "Yes_10"
         })
     # nếu đi vào nhánh wrong_contact thì chấm full điểm
-    elif (i["callClassifyAI"]["decision"]) == "wrong_contact":
+    elif (i["callClassifyAI"]["decision"]) == "wrongnumber":
         result_data.append({
             "Type": "Wrong",
             "file_name": i["fileName"],

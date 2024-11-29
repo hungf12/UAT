@@ -1,424 +1,46 @@
 data = [{
-        "fileName": "3HIB8497M94GF59UVH2O8528C4000BV1_2024-01-11_01-39-26_0.mp3",
-        "agentChannel": 1,
-        "time_load_info": 0.0037529468536376953,
-        "askPaymentAmount": {
-            "evaluate": "yes",
-            "evaluate_channel": {
-                "1": "yes",
-                "2": "yes"
-            },
-            "decision_position": [
-                [
-                    {
-                        "index": 12,
-                        "channel": 1,
-                        "text": "anh phải đóng đủ tiền nó có không tính là trễ cho anh anh còn thiếu 2944000 hả anh",
-                        "intents": [
-                            "ask_payment_info"
-                        ],
-                        "entities": {
-                            "payment_amount": [
-                                {
-                                    "start": 68,
-                                    "end": 75,
-                                    "value": "2944000",
-                                    "real_value": "2944000",
-                                    "entity": "payment_amount",
-                                    "subentities": [],
-                                    "is_required": "required"
-                                }
-                            ],
-                            "payment_amount_word": [
-                                {
-                                    "start": 9,
-                                    "end": 16,
-                                    "value": "đóng đủ",
-                                    "real_value": "đóng đủ",
-                                    "entity": "payment_amount_word",
-                                    "subentities": "None",
-                                    "is_required": "required"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "index": 19,
-                        "channel": 2,
-                        "text": "30000000 đúng",
-                        "intents": [],
-                        "entities": {
-                            "customer_confirm_word": [
-                                {
-                                    "entity": "customer_confirm_word",
-                                    "value": "đúng",
-                                    "start": 9,
-                                    "end": 13,
-                                    "real_value": "đúng",
-                                    "is_required": "required"
-                                }
-                            ]
-                        }
-                    }
-                ],
-                [
-                    {
-                        "index": 36,
-                        "channel": 1,
-                        "text": "dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha",
-                        "intents": [
-                            "ask_payment_info"
-                        ],
-                        "entities": {
-                            "payment_amount": [
-                                {
-                                    "start": 65,
-                                    "end": 72,
-                                    "value": "2944000",
-                                    "real_value": "2944000",
-                                    "entity": "payment_amount",
-                                    "subentities": [],
-                                    "is_required": "required"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "index": 37,
-                        "channel": 2,
-                        "text": "à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á",
-                        "intents": [],
-                        "entities": {
-                            "customer_confirm_word": [
-                                {
-                                    "entity": "customer_confirm_word",
-                                    "value": "rồi",
-                                    "start": 2,
-                                    "end": 5,
-                                    "real_value": "rồi",
-                                    "is_required": "required"
-                                }
-                            ]
-                        }
-                    }
-                ],
-                [
-                    {
-                        "index": 40,
-                        "channel": 1,
-                        "text": "dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha",
-                        "intents": [
-                            "ask_payment_info"
-                        ],
-                        "entities": {
-                            "payment_amount": [
-                                {
-                                    "start": 31,
-                                    "end": 38,
-                                    "value": "2944000",
-                                    "real_value": "2944000",
-                                    "entity": "payment_amount",
-                                    "subentities": [],
-                                    "is_required": "required"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "index": 41,
-                        "channel": 2,
-                        "text": "ờ đâu có biết đâu rồi cám ơn em",
-                        "intents": [],
-                        "entities": {
-                            "customer_confirm_word": [
-                                {
-                                    "entity": "customer_confirm_word",
-                                    "value": "ờ",
-                                    "start": 0,
-                                    "end": 1,
-                                    "real_value": "ờ",
-                                    "is_required": "required"
-                                },
-                                {
-                                    "entity": "customer_confirm_word",
-                                    "value": "rồi",
-                                    "start": 18,
-                                    "end": 21,
-                                    "real_value": "rồi",
-                                    "is_required": "required"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            ],
-            "decision": "yes",
-            "confidence": 1.0,
-            "confidence_channel": {
-                "1": 1.0,
-                "2": 1.0
-            },
-            "position": [
-                {
-                    "index": 12,
-                    "channel": 1,
-                    "text": "anh phải đóng đủ tiền nó có không tính là trễ cho anh anh còn thiếu 2944000 hả anh",
-                    "intents": [
-                        "ask_payment_info"
-                    ],
-                    "entities": {
-                        "payment_amount": [
-                            {
-                                "start": 68,
-                                "end": 75,
-                                "value": "2944000",
-                                "real_value": "2944000",
-                                "entity": "payment_amount",
-                                "subentities": [],
-                                "is_required": "required"
-                            }
-                        ],
-                        "payment_amount_word": [
-                            {
-                                "start": 9,
-                                "end": 16,
-                                "value": "đóng đủ",
-                                "real_value": "đóng đủ",
-                                "entity": "payment_amount_word",
-                                "subentities": "None",
-                                "is_required": "required"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "index": 19,
-                    "channel": 2,
-                    "text": "30000000 đúng",
-                    "intents": [],
-                    "entities": {
-                        "customer_confirm_word": [
-                            {
-                                "entity": "customer_confirm_word",
-                                "value": "đúng",
-                                "start": 9,
-                                "end": 13,
-                                "real_value": "đúng",
-                                "is_required": "required"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "index": 36,
-                    "channel": 1,
-                    "text": "dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha",
-                    "intents": [
-                        "ask_payment_info"
-                    ],
-                    "entities": {
-                        "payment_amount": [
-                            {
-                                "start": 65,
-                                "end": 72,
-                                "value": "2944000",
-                                "real_value": "2944000",
-                                "entity": "payment_amount",
-                                "subentities": [],
-                                "is_required": "required"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "index": 37,
-                    "channel": 2,
-                    "text": "à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á",
-                    "intents": [],
-                    "entities": {
-                        "customer_confirm_word": [
-                            {
-                                "entity": "customer_confirm_word",
-                                "value": "rồi",
-                                "start": 2,
-                                "end": 5,
-                                "real_value": "rồi",
-                                "is_required": "required"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "index": 40,
-                    "channel": 1,
-                    "text": "dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha",
-                    "intents": [
-                        "ask_payment_info"
-                    ],
-                    "entities": {
-                        "payment_amount": [
-                            {
-                                "start": 31,
-                                "end": 38,
-                                "value": "2944000",
-                                "real_value": "2944000",
-                                "entity": "payment_amount",
-                                "subentities": [],
-                                "is_required": "required"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "index": 41,
-                    "channel": 2,
-                    "text": "ờ đâu có biết đâu rồi cám ơn em",
-                    "intents": [],
-                    "entities": {
-                        "customer_confirm_word": [
-                            {
-                                "entity": "customer_confirm_word",
-                                "value": "ờ",
-                                "start": 0,
-                                "end": 1,
-                                "real_value": "ờ",
-                                "is_required": "required"
-                            },
-                            {
-                                "entity": "customer_confirm_word",
-                                "value": "rồi",
-                                "start": 18,
-                                "end": 21,
-                                "real_value": "rồi",
-                                "is_required": "required"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "slots": {
-                "payment_amount": [
-                    {
-                        "index": 12,
-                        "value": [
-                            "2944000"
-                        ]
-                    },
-                    {
-                        "index": 36,
-                        "value": [
-                            "2944000"
-                        ]
-                    },
-                    {
-                        "index": 40,
-                        "value": [
-                            "2944000"
-                        ]
-                    }
-                ],
-                "payment_amount_word": [
-                    {
-                        "index": 12,
-                        "value": [
-                            "đóng đủ"
-                        ]
-                    }
-                ],
-                "customer_confirm_word": [
-                    {
-                        "index": 19,
-                        "value": [
-                            "đúng"
-                        ]
-                    },
-                    {
-                        "index": 37,
-                        "value": [
-                            "rồi"
-                        ]
-                    },
-                    {
-                        "index": 41,
-                        "value": [
-                            "ờ",
-                            "rồi"
-                        ]
-                    }
-                ]
-            },
-            "task": "compare_beta"
+    "fileName": "",
+    "agentChannel": 1,
+    "time_load_info": 0.004020214080810547,
+    "askPaymentAmount": {
+        "evaluate": "no",
+        "evaluate_channel": {
+            "1": "no",
+            "2": "no"
         },
-        "askPaymentDatetime": {
-            "evaluate": "yes",
-            "evaluate_channel": {
-                "1": "yes",
-                "2": "yes"
-            },
-            "decision_position": [
-                [
-                    {
-                        "index": 36,
-                        "channel": 1,
-                        "text": "dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha",
-                        "intents": [
-                            "ask_payment_info"
-                        ],
-                        "entities": {
-                            "payment_datetime": [
-                                {
-                                    "start": 37,
-                                    "end": 44,
-                                    "value": "hôm nay",
-                                    "real_value": "hôm nay",
-                                    "entity": "payment_datetime",
-                                    "subentities": [],
-                                    "is_required": "required"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "index": 37,
-                        "channel": 2,
-                        "text": "à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á",
-                        "intents": [],
-                        "entities": {
-                            "customer_confirm_word": [
-                                {
-                                    "entity": "customer_confirm_word",
-                                    "value": "rồi",
-                                    "start": 2,
-                                    "end": 5,
-                                    "real_value": "rồi",
-                                    "is_required": "required"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            ],
-            "decision": "yes",
-            "confidence": 1.0,
-            "confidence_channel": {
-                "1": 1.0,
-                "2": 1.0
-            },
-            "position": [
+        "decision_position": [],
+        "decision": "no",
+        "confidence": 0.0,
+        "confidence_channel": {
+            "1": 0.0,
+            "2": 0.0
+        },
+        "position": [],
+        "slots": {},
+        "task": "compare_beta"
+    },
+    "askPaymentDatetime": {
+        "evaluate": "yes",
+        "evaluate_channel": {
+            "1": "yes",
+            "2": "yes"
+        },
+        "decision_position": [
+            [
                 {
-                    "index": 36,
+                    "index": 9,
                     "channel": 1,
-                    "text": "dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha",
+                    "text": "từ tháng 6 trở đi là mình cũng chưa có thanh toán",
                     "intents": [
                         "ask_payment_info"
                     ],
                     "entities": {
                         "payment_datetime": [
                             {
-                                "start": 37,
-                                "end": 44,
-                                "value": "hôm nay",
-                                "real_value": "hôm nay",
+                                "start": 3,
+                                "end": 10,
+                                "value": "tháng 6",
+                                "real_value": "tháng 6",
                                 "entity": "payment_datetime",
                                 "subentities": [],
                                 "is_required": "required"
@@ -427,412 +49,484 @@ data = [{
                     }
                 },
                 {
-                    "index": 37,
+                    "index": 10,
                     "channel": 2,
-                    "text": "à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á",
+                    "text": "dạ",
                     "intents": [],
                     "entities": {
                         "customer_confirm_word": [
                             {
                                 "entity": "customer_confirm_word",
-                                "value": "rồi",
-                                "start": 2,
-                                "end": 5,
-                                "real_value": "rồi",
+                                "value": "dạ",
+                                "start": 0,
+                                "end": 2,
+                                "real_value": "dạ",
                                 "is_required": "required"
                             }
                         ]
                     }
                 }
             ],
+            [
+                {
+                    "index": 13,
+                    "channel": 1,
+                    "text": "chị cố gắng sắp xếp từ giờ đến trễ nhất là 23 tây giùm em là bây giờ bên em hỗ trợ cho chị trong tuần này tới thứ 6 á hỗ trợ chị tới ngày đó vui lòng mình bổ sung được tối thiểu không được những kỳ đang trễ là 3 kỳ hiện tại của tháng 6 tháng 7 tháng 8 thì mình vui lòng cố gắng bổ sung được ít nhất từ 1 đến 2 kỳ để hồ sơ của mình có phát sinh giao dịch trong 3 tháng tiếp nếu mà không á chị vì cái hồ sơ mình mua trả góp góp thành hồ sơ nợ xấu đó",
+                    "intents": [
+                        "ask_payment_info"
+                    ],
+                    "entities": {
+                        "payment_datetime": [
+                            {
+                                "start": 43,
+                                "end": 49,
+                                "value": "23 tây",
+                                "real_value": "23 tây",
+                                "entity": "payment_datetime",
+                                "subentities": [],
+                                "is_required": "required"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "index": 14,
+                    "channel": 2,
+                    "text": "dạ",
+                    "intents": [],
+                    "entities": {
+                        "customer_confirm_word": [
+                            {
+                                "entity": "customer_confirm_word",
+                                "value": "dạ",
+                                "start": 0,
+                                "end": 2,
+                                "real_value": "dạ",
+                                "is_required": "required"
+                            }
+                        ]
+                    }
+                }
+            ],
+            [
+                {
+                    "index": 27,
+                    "channel": 1,
+                    "text": "nên có gì cố gắng giùm em trễ nhất là 23 tây mình thu xếp được tối thiểu 1 đến 2 kỳ là mình chạy ra mình thanh toán cho phía công ty rồi tháng mình cố gắng mình thanh toán luôn các kỳ trễ còn lại để hồ sơ tránh kiểm tra tình trạng hồ sơ đánh giá lại hồ sơ nợ xấu tại vì giờ mình đã chú ý hồ sơ nhắc nhở khách hàng để lên sắp lên nợ xấu nhóm 3 rồi chị ha",
+                    "intents": [
+                        "ask_payment_info"
+                    ],
+                    "entities": {
+                        "payment_datetime": [
+                            {
+                                "start": 38,
+                                "end": 44,
+                                "value": "23 tây",
+                                "real_value": "23 tây",
+                                "entity": "payment_datetime",
+                                "subentities": [],
+                                "is_required": "required"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "index": 28,
+                    "channel": 2,
+                    "text": "dạ",
+                    "intents": [],
+                    "entities": {
+                        "customer_confirm_word": [
+                            {
+                                "entity": "customer_confirm_word",
+                                "value": "dạ",
+                                "start": 0,
+                                "end": 2,
+                                "real_value": "dạ",
+                                "is_required": "required"
+                            }
+                        ]
+                    }
+                }
+            ]
+        ],
+        "decision": "yes",
+        "confidence": 1.0,
+        "confidence_channel": {
+            "1": 1.0,
+            "2": 1.0
+        },
+        "position": [
+            {
+                "index": 9,
+                "channel": 1,
+                "text": "từ tháng 6 trở đi là mình cũng chưa có thanh toán",
+                "intents": [
+                    "ask_payment_info"
+                ],
+                "entities": {
+                    "payment_datetime": [
+                        {
+                            "start": 3,
+                            "end": 10,
+                            "value": "tháng 6",
+                            "real_value": "tháng 6",
+                            "entity": "payment_datetime",
+                            "subentities": [],
+                            "is_required": "required"
+                        }
+                    ]
+                }
+            },
+            {
+                "index": 10,
+                "channel": 2,
+                "text": "dạ",
+                "intents": [],
+                "entities": {
+                    "customer_confirm_word": [
+                        {
+                            "entity": "customer_confirm_word",
+                            "value": "dạ",
+                            "start": 0,
+                            "end": 2,
+                            "real_value": "dạ",
+                            "is_required": "required"
+                        }
+                    ]
+                }
+            },
+            {
+                "index": 13,
+                "channel": 1,
+                "text": "chị cố gắng sắp xếp từ giờ đến trễ nhất là 23 tây giùm em là bây giờ bên em hỗ trợ cho chị trong tuần này tới thứ 6 á hỗ trợ chị tới ngày đó vui lòng mình bổ sung được tối thiểu không được những kỳ đang trễ là 3 kỳ hiện tại của tháng 6 tháng 7 tháng 8 thì mình vui lòng cố gắng bổ sung được ít nhất từ 1 đến 2 kỳ để hồ sơ của mình có phát sinh giao dịch trong 3 tháng tiếp nếu mà không á chị vì cái hồ sơ mình mua trả góp góp thành hồ sơ nợ xấu đó",
+                "intents": [
+                    "ask_payment_info"
+                ],
+                "entities": {
+                    "payment_datetime": [
+                        {
+                            "start": 43,
+                            "end": 49,
+                            "value": "23 tây",
+                            "real_value": "23 tây",
+                            "entity": "payment_datetime",
+                            "subentities": [],
+                            "is_required": "required"
+                        }
+                    ]
+                }
+            },
+            {
+                "index": 14,
+                "channel": 2,
+                "text": "dạ",
+                "intents": [],
+                "entities": {
+                    "customer_confirm_word": [
+                        {
+                            "entity": "customer_confirm_word",
+                            "value": "dạ",
+                            "start": 0,
+                            "end": 2,
+                            "real_value": "dạ",
+                            "is_required": "required"
+                        }
+                    ]
+                }
+            },
+            {
+                "index": 27,
+                "channel": 1,
+                "text": "nên có gì cố gắng giùm em trễ nhất là 23 tây mình thu xếp được tối thiểu 1 đến 2 kỳ là mình chạy ra mình thanh toán cho phía công ty rồi tháng mình cố gắng mình thanh toán luôn các kỳ trễ còn lại để hồ sơ tránh kiểm tra tình trạng hồ sơ đánh giá lại hồ sơ nợ xấu tại vì giờ mình đã chú ý hồ sơ nhắc nhở khách hàng để lên sắp lên nợ xấu nhóm 3 rồi chị ha",
+                "intents": [
+                    "ask_payment_info"
+                ],
+                "entities": {
+                    "payment_datetime": [
+                        {
+                            "start": 38,
+                            "end": 44,
+                            "value": "23 tây",
+                            "real_value": "23 tây",
+                            "entity": "payment_datetime",
+                            "subentities": [],
+                            "is_required": "required"
+                        }
+                    ]
+                }
+            },
+            {
+                "index": 28,
+                "channel": 2,
+                "text": "dạ",
+                "intents": [],
+                "entities": {
+                    "customer_confirm_word": [
+                        {
+                            "entity": "customer_confirm_word",
+                            "value": "dạ",
+                            "start": 0,
+                            "end": 2,
+                            "real_value": "dạ",
+                            "is_required": "required"
+                        }
+                    ]
+                }
+            }
+        ],
+        "slots": {
+            "payment_datetime": [
+                {
+                    "index": 9,
+                    "value": [
+                        "tháng 6"
+                    ]
+                },
+                {
+                    "index": 13,
+                    "value": [
+                        "23 tây"
+                    ]
+                },
+                {
+                    "index": 27,
+                    "value": [
+                        "23 tây"
+                    ]
+                }
+            ],
+            "customer_confirm_word": [
+                {
+                    "index": 10,
+                    "value": [
+                        "dạ"
+                    ]
+                },
+                {
+                    "index": 14,
+                    "value": [
+                        "dạ"
+                    ]
+                },
+                {
+                    "index": 28,
+                    "value": [
+                        "dạ"
+                    ]
+                }
+            ]
+        },
+        "task": "compare_beta"
+    },
+    "askPaymentMethod": {
+        "evaluate": "no",
+        "evaluate_channel": {
+            "1": "no",
+            "2": "no"
+        },
+        "decision_position": [],
+        "decision": "no",
+        "confidence": 0.0,
+        "confidence_channel": {
+            "1": 0.0,
+            "2": 0.0
+        },
+        "position": [],
+        "slots": {},
+        "task": "compare_beta"
+    },
+    "cusProvidePaymentAmount": {
+        "evaluate": "no",
+        "evaluate_channel": {
+            "2": "no",
+            "1": "no"
+        },
+        "decision_position": [],
+        "decision": "no",
+        "confidence": 0.0,
+        "confidence_channel": {
+            "2": 0.0,
+            "1": 0.0
+        },
+        "position": [],
+        "slots": {},
+        "position_range_index": "null",
+        "position_condition": [],
+        "task": "compare"
+    },
+    "cusProvidePaymentDatetime": {
+        "evaluate": "no",
+        "evaluate_channel": {
+            "2": "no",
+            "1": "no"
+        },
+        "decision_position": [],
+        "decision": "no",
+        "confidence": 0.0,
+        "confidence_channel": {
+            "2": 0.0,
+            "1": 0.0
+        },
+        "position": [],
+        "slots": {},
+        "position_range_index": "null",
+        "position_condition": [],
+        "task": "compare"
+    },
+    "cusProvidePaymentMethod": {
+        "evaluate": "no",
+        "evaluate_channel": {
+            "2": "no",
+            "1": "no"
+        },
+        "decision_position": [],
+        "decision": "no",
+        "confidence": 0.0,
+        "confidence_channel": {
+            "2": 0.0,
+            "1": 0.0
+        },
+        "position": [],
+        "slots": {},
+        "position_range_index": "null",
+        "position_condition": [],
+        "task": "compare"
+    },
+    "callClassifyAI": {
+        "evaluate": "yes",
+        "evaluate_channel": {
+            "1": "yes"
+        },
+        "decision_position": [
+            {
+                "index": 0,
+                "channel": 1,
+                "text": "<customer>: alo <agent>: alo <customer>: alo <agent>: dạ số điện thoại chị bạch thị thu hà đây đúng không <customer>: dạ dạ <agent>: hồ sơ vay trả góp bên fe của mình á mua sản phẩm điện máy á đóng tiền được vậy chị <customer>: dạ tại em chạy tiền chưa ra nên em đóng chưa có được <agent>: là mình đang gặp khó khăn nhưng mà từ lúc mà mình nhận cái sản phẩm về tới giờ là mình mới đóng được đúng 1 lần của tháng 5 thôi <customer>: dạ <agent>: từ tháng 6 trở đi là mình cũng chưa có thanh toán",
+                "intents": [
+                    "client"
+                ],
+                "entities": {}
+            }
+        ],
+        "decision": "client",
+        "confidence": 1.0,
+        "confidence_channel": {
+            "1": 1.0
+        },
+        "position": [
+            {
+                "index": 0,
+                "channel": 1,
+                "text": "<customer>: alo <agent>: alo <customer>: alo <agent>: dạ số điện thoại chị bạch thị thu hà đây đúng không <customer>: dạ dạ <agent>: hồ sơ vay trả góp bên fe của mình á mua sản phẩm điện máy á đóng tiền được vậy chị <customer>: dạ tại em chạy tiền chưa ra nên em đóng chưa có được <agent>: là mình đang gặp khó khăn nhưng mà từ lúc mà mình nhận cái sản phẩm về tới giờ là mình mới đóng được đúng 1 lần của tháng 5 thôi <customer>: dạ <agent>: từ tháng 6 trở đi là mình cũng chưa có thanh toán",
+                "intents": [
+                    "client"
+                ],
+                "entities": {}
+            }
+        ],
+        "slots": {},
+        "position_range_index": [
+            0,
+            0
+        ],
+        "position_condition": [
+            0
+        ],
+        "task": "compare"
+    },
+    "callResultAI": {
+        "evaluate": "yes",
+        "evaluate_channel": {
+            "1": "yes"
+        },
+        "decision_position": [
+            {
+                "index": 0,
+                "channel": 1,
+                "text": "<agent>: dạ đi làm kiểu như công việc của mình lúc cói hay là công ty nó nó giảm cắt giảm nhân sự hay sao chị <customer>: tại em mới đi làm đây á <agent>: à vậy là 3 tháng rồi là mình chưa có đi làm 2 tháng rồi chưa đi làm tháng bắt đầu mình mới đi làm lại <customer>: dạ <agent>: đúng không rồi mình cố gắng giúp em nha tại vì hồ sơ của mình đã trễ rồi mà để 90 ngày quá 90 ngày trễ rồi chắc chắn hồ sơ lên nợ xấu mà hồ sơ này là gần đến 90 ngày rồi ha <customer>: dạ dạ <agent>: nên có gì cố gắng giùm em trễ nhất là 23 tây mình thu xếp được tối thiểu 1 đến 2 kỳ là mình chạy ra mình thanh toán cho phía công ty rồi tháng mình cố gắng mình thanh toán luôn các kỳ trễ còn lại để hồ sơ tránh kiểm tra tình trạng hồ sơ đánh giá lại hồ sơ nợ xấu tại vì giờ mình đã chú ý hồ sơ nhắc nhở khách hàng để lên sắp lên nợ xấu nhóm 3 rồi chị ha <customer>: dạ <agent>: rồi em chốt hồ sơ của chị ở đây trễ nhất năm giờ chiều của ngày 2 3 tây <customer>: dạ dạ <agent>: tháng 8 này thế giới di động hoặc điện máy xanh thì vui lòng ra thanh toán tối thiểu những kỳ trễ của mình không được tất cả 3 kỳ thì mình ráng cố gắng 1 đến 2 kỳ trễ <customer>: dạ <agent>: để bên em báo cáo hồ sơ nhá <customer>: dạ dạ dạ dạ dạ <agent>: rồi em cảm ơn chào chị",
+                "intents": [
+                    "willpay"
+                ],
+                "entities": {}
+            }
+        ],
+        "decision": "willpay",
+        "confidence": 1.0,
+        "confidence_channel": {
+            "1": 1.0
+        },
+        "position": [
+            {
+                "index": 0,
+                "channel": 1,
+                "text": "<agent>: dạ đi làm kiểu như công việc của mình lúc cói hay là công ty nó nó giảm cắt giảm nhân sự hay sao chị <customer>: tại em mới đi làm đây á <agent>: à vậy là 3 tháng rồi là mình chưa có đi làm 2 tháng rồi chưa đi làm tháng bắt đầu mình mới đi làm lại <customer>: dạ <agent>: đúng không rồi mình cố gắng giúp em nha tại vì hồ sơ của mình đã trễ rồi mà để 90 ngày quá 90 ngày trễ rồi chắc chắn hồ sơ lên nợ xấu mà hồ sơ này là gần đến 90 ngày rồi ha <customer>: dạ dạ <agent>: nên có gì cố gắng giùm em trễ nhất là 23 tây mình thu xếp được tối thiểu 1 đến 2 kỳ là mình chạy ra mình thanh toán cho phía công ty rồi tháng mình cố gắng mình thanh toán luôn các kỳ trễ còn lại để hồ sơ tránh kiểm tra tình trạng hồ sơ đánh giá lại hồ sơ nợ xấu tại vì giờ mình đã chú ý hồ sơ nhắc nhở khách hàng để lên sắp lên nợ xấu nhóm 3 rồi chị ha <customer>: dạ <agent>: rồi em chốt hồ sơ của chị ở đây trễ nhất năm giờ chiều của ngày 2 3 tây <customer>: dạ dạ <agent>: tháng 8 này thế giới di động hoặc điện máy xanh thì vui lòng ra thanh toán tối thiểu những kỳ trễ của mình không được tất cả 3 kỳ thì mình ráng cố gắng 1 đến 2 kỳ trễ <customer>: dạ <agent>: để bên em báo cáo hồ sơ nhá <customer>: dạ dạ dạ dạ dạ <agent>: rồi em cảm ơn chào chị",
+                "intents": [
+                    "willpay"
+                ],
+                "entities": {}
+            }
+        ],
+        "slots": {},
+        "position_range_index": [
+            0,
+            0
+        ],
+        "position_condition": [
+            0
+        ],
+        "task": "compare"
+    },
+    "criterias_order": [
+        {
+            "criteria_name": "askPaymentDatetime",
+            "decision": "yes",
+            "position_range_index": "",
             "slots": {
                 "payment_datetime": [
                     {
-                        "index": 36,
+                        "index": 9,
                         "value": [
-                            "hôm nay"
+                            "tháng 6"
+                        ]
+                    },
+                    {
+                        "index": 13,
+                        "value": [
+                            "23 tây"
+                        ]
+                    },
+                    {
+                        "index": 27,
+                        "value": [
+                            "23 tây"
                         ]
                     }
                 ],
                 "customer_confirm_word": [
                     {
-                        "index": 37,
+                        "index": 10,
                         "value": [
-                            "rồi"
+                            "dạ"
                         ]
-                    }
-                ]
-            },
-            "task": "compare_beta"
-        },
-        "askPaymentMethod": {
-            "evaluate": "no",
-            "evaluate_channel": {
-                "1": "no",
-                "2": "no"
-            },
-            "decision_position": [],
-            "decision": "no",
-            "confidence": 0.0,
-            "confidence_channel": {
-                "1": 0.0,
-                "2": 0.0
-            },
-            "position": [],
-            "slots": {},
-            "task": "compare_beta"
-        },
-        "cusProvidePaymentAmount": {
-            "evaluate": "yes",
-            "evaluate_channel": {
-                "2": "yes",
-                "1": "yes"
-            },
-            "decision_position": [
-                {
-                    "index": 7,
-                    "channel": 2,
-                    "text": "anh đóng ngày 51373000 rồi mà",
-                    "intents": [
-                        "customer_inform_already_paid"
-                    ],
-                    "entities": {
-                        "customer_amount": [
-                            {
-                                "start": 14,
-                                "end": 22,
-                                "value": "51373000",
-                                "real_value": "51373000",
-                                "entity": "customer_amount",
-                                "subentities": [],
-                                "is_required": "required"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "index": 8,
-                    "channel": 1,
-                    "text": "thì anh đóng 1",
-                    "intents": [],
-                    "entities": {}
-                },
-                {
-                    "index": 9,
-                    "channel": 2,
-                    "text": "coi lại",
-                    "intents": [],
-                    "entities": {}
-                },
-                {
-                    "index": 10,
-                    "channel": 1,
-                    "text": "anh ơi anh đóng 1703000 là nó thiếu tiền là nó trễ đúng đúng rồi anh anh phải đóng đủ tiền",
-                    "intents": [],
-                    "entities": {}
-                }
-            ],
-            "decision": "yes",
-            "confidence": 1.0,
-            "confidence_channel": {
-                "2": 1.0,
-                "1": 1.0
-            },
-            "position": [
-                {
-                    "index": 7,
-                    "channel": 2,
-                    "text": "anh đóng ngày 51373000 rồi mà",
-                    "intents": [
-                        "customer_inform_already_paid"
-                    ],
-                    "entities": {
-                        "customer_amount": [
-                            {
-                                "start": 14,
-                                "end": 22,
-                                "value": "51373000",
-                                "real_value": "51373000",
-                                "entity": "customer_amount",
-                                "subentities": [],
-                                "is_required": "required"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "index": 8,
-                    "channel": 1,
-                    "text": "thì anh đóng 1",
-                    "intents": [],
-                    "entities": {}
-                },
-                {
-                    "index": 9,
-                    "channel": 2,
-                    "text": "coi lại",
-                    "intents": [],
-                    "entities": {}
-                },
-                {
-                    "index": 10,
-                    "channel": 1,
-                    "text": "anh ơi anh đóng 1703000 là nó thiếu tiền là nó trễ đúng đúng rồi anh anh phải đóng đủ tiền",
-                    "intents": [],
-                    "entities": {}
-                }
-            ],
-            "slots": {
-                "customer_amount": [
+                    },
                     {
-                        "index": 7,
+                        "index": 14,
                         "value": [
-                            "51373000"
-                        ],
-                        "real_value": [
-                            "51373000"
+                            "dạ"
+                        ]
+                    },
+                    {
+                        "index": 28,
+                        "value": [
+                            "dạ"
                         ]
                     }
                 ]
-            },
-            "position_range_index": [
-                7,
-                10
-            ],
-            "position_condition": [
-                7,
-                8,
-                9,
-                10,
-                11
-            ],
-            "task": "compare"
-        },
-        "cusProvidePaymentDatetime": {
-            "evaluate": "no",
-            "evaluate_channel": {
-                "2": "no",
-                "1": "no"
-            },
-            "decision_position": [],
-            "decision": "no",
-            "confidence": 0.0,
-            "confidence_channel": {
-                "2": 0.0,
-                "1": 0.0
-            },
-            "position": [],
-            "slots": {},
-            "position_range_index": "None",
-            "position_condition": [],
-            "task": "compare"
-        },
-        "cusProvidePaymentMethod": {
-            "evaluate": "no",
-            "evaluate_channel": {
-                "2": "no",
-                "1": "no"
-            },
-            "decision_position": [],
-            "decision": "no",
-            "confidence": 0.0,
-            "confidence_channel": {
-                "2": 0.0,
-                "1": 0.0
-            },
-            "position": [],
-            "slots": {},
-            "position_range_index": "None",
-            "position_condition": [],
-            "task": "compare"
-        },
-        "callClassifyAI": {
-            "evaluate": "yes",
-            "evaluate_channel": {
-                "1": "yes"
-            },
-            "decision_position": [
-                {
-                    "index": 0,
-                    "channel": 1,
-                    "text": "<customer>: alo trong cái khoản trước đó hả <agent>: dạ anh ơi hôm trước thì anh hình như cái hồ sơ trước anh kết thúc rồi mà đúng không <customer>: đúng rồi kết thúc tháng 12 <agent>: dạ đúng rồi dạ đúng rồi là bắt đầu qua cái hồ sơ này là bắt đầu đóng cao gốc khoản lãi còn hồ sơ trước anh còn á thì có hồ sơ anh chỉ đóng lãi thôi <customer>: là nó sẽ ạ <agent>: còn bây giờ hồ sơ kết thúc rồi <customer>: à anh đâu có biết là tôi đóng cái nào trong cái kia còn cái nào để lại cái ai biết đâu <agent>: dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha <customer>: à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á <agent>: dạ dạ 1373000 dạ nãy giờ còn thiếu 2944000 á <customer>: rồi rồi rồi đúng rồi anh lại đóng cái đó 1373000 rồi <agent>: dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha <customer>: ờ đâu có biết đâu rồi cám ơn em <agent>: dạ rồi dạ rồi em cám ơn chào anh ạ <customer>: ừ",
-                    "intents": [
-                        "client"
-                    ],
-                    "entities": {}
-                }
-            ],
-            "decision": "client",
-            "confidence": 1.0,
-            "confidence_channel": {
-                "1": 1.0
-            },
-            "position": [
-                {
-                    "index": 0,
-                    "channel": 1,
-                    "text": "<customer>: alo trong cái khoản trước đó hả <agent>: dạ anh ơi hôm trước thì anh hình như cái hồ sơ trước anh kết thúc rồi mà đúng không <customer>: đúng rồi kết thúc tháng 12 <agent>: dạ đúng rồi dạ đúng rồi là bắt đầu qua cái hồ sơ này là bắt đầu đóng cao gốc khoản lãi còn hồ sơ trước anh còn á thì có hồ sơ anh chỉ đóng lãi thôi <customer>: là nó sẽ ạ <agent>: còn bây giờ hồ sơ kết thúc rồi <customer>: à anh đâu có biết là tôi đóng cái nào trong cái kia còn cái nào để lại cái ai biết đâu <agent>: dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha <customer>: à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á <agent>: dạ dạ 1373000 dạ nãy giờ còn thiếu 2944000 á <customer>: rồi rồi rồi đúng rồi anh lại đóng cái đó 1373000 rồi <agent>: dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha <customer>: ờ đâu có biết đâu rồi cám ơn em <agent>: dạ rồi dạ rồi em cám ơn chào anh ạ <customer>: ừ",
-                    "intents": [
-                        "client"
-                    ],
-                    "entities": {}
-                }
-            ],
-            "slots": {},
-            "position_range_index": [
-                0,
-                0
-            ],
-            "position_condition": [
-                0
-            ],
-            "task": "compare"
-        },
-        "callResultAI": {
-            "evaluate": "yes",
-            "evaluate_channel": {
-                "1": "yes"
-            },
-            "decision_position": [
-                {
-                    "index": 0,
-                    "channel": 1,
-                    "text": "<customer>: alo trong cái khoản trước đó hả <agent>: dạ anh ơi hôm trước thì anh hình như cái hồ sơ trước anh kết thúc rồi mà đúng không <customer>: đúng rồi kết thúc tháng 12 <agent>: dạ đúng rồi dạ đúng rồi là bắt đầu qua cái hồ sơ này là bắt đầu đóng cao gốc khoản lãi còn hồ sơ trước anh còn á thì có hồ sơ anh chỉ đóng lãi thôi <customer>: là nó sẽ ạ <agent>: còn bây giờ hồ sơ kết thúc rồi <customer>: à anh đâu có biết là tôi đóng cái nào trong cái kia còn cái nào để lại cái ai biết đâu <agent>: dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha <customer>: à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á <agent>: dạ dạ 1373000 dạ nãy giờ còn thiếu 2944000 á <customer>: rồi rồi rồi đúng rồi anh lại đóng cái đó 1373000 rồi <agent>: dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha <customer>: ờ đâu có biết đâu rồi cám ơn em <agent>: dạ rồi dạ rồi em cám ơn chào anh ạ <customer>: ừ",
-                    "intents": [
-                        "willpay"
-                    ],
-                    "entities": {}
-                }
-            ],
-            "decision": "willpay",
-            "confidence": 1.0,
-            "confidence_channel": {
-                "1": 1.0
-            },
-            "position": [
-                {
-                    "index": 0,
-                    "channel": 1,
-                    "text": "<customer>: alo trong cái khoản trước đó hả <agent>: dạ anh ơi hôm trước thì anh hình như cái hồ sơ trước anh kết thúc rồi mà đúng không <customer>: đúng rồi kết thúc tháng 12 <agent>: dạ đúng rồi dạ đúng rồi là bắt đầu qua cái hồ sơ này là bắt đầu đóng cao gốc khoản lãi còn hồ sơ trước anh còn á thì có hồ sơ anh chỉ đóng lãi thôi <customer>: là nó sẽ ạ <agent>: còn bây giờ hồ sơ kết thúc rồi <customer>: à anh đâu có biết là tôi đóng cái nào trong cái kia còn cái nào để lại cái ai biết đâu <agent>: dạ vậy là anh coi thu xếp trong ngày hôm nay anh đi đóng bổ sung 2944000 để hoàn tất hồ sơ nha anh tại trễ tới 7 ngày rồi nha <customer>: à rồi cái cái kia triệu năm trăm nghìn là mới trễ phải không 3000000 300000 mấy 3 á <agent>: dạ dạ 1373000 dạ nãy giờ còn thiếu 2944000 á <customer>: rồi rồi rồi đúng rồi anh lại đóng cái đó 1373000 rồi <agent>: dạ giờ anh đóng thêm cái đó là 2944000 nha anh vô cái hồ sơ đó luôn nha <customer>: ờ đâu có biết đâu rồi cám ơn em <agent>: dạ rồi dạ rồi em cám ơn chào anh ạ <customer>: ừ",
-                    "intents": [
-                        "willpay"
-                    ],
-                    "entities": {}
-                }
-            ],
-            "slots": {},
-            "position_range_index": [
-                0,
-                0
-            ],
-            "position_condition": [
-                0
-            ],
-            "task": "compare"
-        },
-        "criterias_order": [
-            {
-                "criteria_name": "cusProvidePaymentAmount",
-                "decision": "yes",
-                "position_range_index": [
-                    7,
-                    10
-                ],
-                "slots": {
-                    "customer_amount": [
-                        {
-                            "index": 7,
-                            "value": [
-                                "51373000"
-                            ],
-                            "real_value": [
-                                "51373000"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "criteria_name": "askPaymentAmount",
-                "decision": "yes",
-                "position_range_index": "",
-                "slots": {
-                    "payment_amount": [
-                        {
-                            "index": 12,
-                            "value": [
-                                "2944000"
-                            ]
-                        },
-                        {
-                            "index": 36,
-                            "value": [
-                                "2944000"
-                            ]
-                        },
-                        {
-                            "index": 40,
-                            "value": [
-                                "2944000"
-                            ]
-                        }
-                    ],
-                    "payment_amount_word": [
-                        {
-                            "index": 12,
-                            "value": [
-                                "đóng đủ"
-                            ]
-                        }
-                    ],
-                    "customer_confirm_word": [
-                        {
-                            "index": 19,
-                            "value": [
-                                "đúng"
-                            ]
-                        },
-                        {
-                            "index": 37,
-                            "value": [
-                                "rồi"
-                            ]
-                        },
-                        {
-                            "index": 41,
-                            "value": [
-                                "ờ",
-                                "rồi"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
-                "criteria_name": "askPaymentDatetime",
-                "decision": "yes",
-                "position_range_index": "",
-                "slots": {
-                    "payment_datetime": [
-                        {
-                            "index": 36,
-                            "value": [
-                                "hôm nay"
-                            ]
-                        }
-                    ],
-                    "customer_confirm_word": [
-                        {
-                            "index": 37,
-                            "value": [
-                                "rồi"
-                            ]
-                        }
-                    ]
-                }
             }
-        ]
-    },]
+        }
+    ]
+}]
 
 result_data = []
 
@@ -845,7 +539,7 @@ for i in data:
             "result": "Yes_30"
         })
     # nếu đi vào nhánh wrong_contact thì chấm full điểm
-    elif (i["callClassifyAI"]["decision"]) == "wrong_contact":
+    elif (i["callClassifyAI"]["decision"]) == "wrongnumber":
         result_data.append({
             "Type": "Wrong",
             "file_name": i["fileName"],
@@ -954,7 +648,7 @@ for i in data:
                 else:
                     if (i["askPaymentDatetime"]["decision"]) == "no":
                         result_data.append({
-                            "type": "No-",
+                            "type": "No - không nhắc ngày thanh toán",
                             "file_name": i["fileName"],
                             "result": "No"
                         })
