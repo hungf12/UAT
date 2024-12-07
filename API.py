@@ -29,7 +29,7 @@ def add_book():
         return jsonify({"error": "Invalid input"}), 400
     new_book["id"] = books[-1]["id"] + 1 if books else 1
     books.append(new_book)
-    return jsonify(new_book), 201
+    return jsonify({"message": "Book added successfully", "book": new_book}), 201
 
 # Cập nhật thông tin một cuốn sách
 @app.route('/books/<int:book_id>', methods=['PUT'])
