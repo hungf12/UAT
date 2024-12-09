@@ -58,7 +58,7 @@ def add_book():
     return jsonify({
         "message": "Create Information successfully",
         "book": {"id": new_info.id, "identification": new_info.identification, "name": new_info.name, "date": new_info.date, "location": new_info.location,}
-    }), 201
+    }), 200
 
 
 # Endpoint: Cập nhật thông tin sách
