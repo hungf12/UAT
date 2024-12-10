@@ -57,7 +57,7 @@ def add_book():
     db.session.commit()
     return jsonify({
         "message": "Create Information successfully",
-        "book": {"id": new_info.id, "identification": new_info.identification, "name": new_info.name, "date": new_info.date, "location": new_info.location,}
+        "Data": {"id": new_info.id, "identification": new_info.identification, "name": new_info.name, "date": new_info.date, "location": new_info.location,}
     }), 200
 
 
@@ -73,7 +73,7 @@ def update_book(info_id):
     if "name" in data:
         infor_id.name = data['name']
     db.session.commit()
-    return jsonify({"message": "Information updated successfully", "book": {"id": infor_id.id, "identification": infor_id.identification, "name": infor_id.name}})
+    return jsonify({"message": "Information updated successfully", "Data": {"id": infor_id.id, "identification": infor_id.identification, "name": infor_id.name}})
 
 # Endpoint: Xóa sách
 @app.route('/books/<int:info_id>', methods=['DELETE'])
@@ -103,12 +103,12 @@ def check_identification():
         return jsonify({"error": "Identification not found"}), 404
 
     # Trả về thông tin name, date, location
-    return jsonify({
+    return jsonify({"message":"Search data successfully", "Data": {
         "identification": infor.identification,
         "name": infor.name,
         "date": infor.date,
         "location": infor.location
-    })
+    }})
 
 
 if __name__ == '__main__':
