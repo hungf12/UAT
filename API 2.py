@@ -110,6 +110,14 @@ def check_identification():
         "location": infor.location
     }})
 
+@app.route('/items/<int:id>', methods=['DELETE'])
+def delete_item(item_id):
+    item = Item.query.get(item_id)
+    if not item:
+        return jsonify({'message': 'Item not found'}), 404
+    db.session.delete(item)
+    db.session.commit()
+    return jsonify({'message': 'Item deleted successfully'})
 
 if __name__ == '__main__':
     app.run(debug=True)
