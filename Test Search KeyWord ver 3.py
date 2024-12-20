@@ -1,5 +1,6 @@
 import json
 import re
+from machine import json_result
 # Define the data file and keyword file
 
 data_file = [
@@ -125,7 +126,7 @@ for r in result:
     print(f"Text: {r['Text']}")
     print("-" * 40)
 
-
+print(json_result)
 
 #print(result)
 
