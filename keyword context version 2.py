@@ -6453,34 +6453,23 @@ kw = [
 
 result = []
 for item in data:
-    # nếu decision trả về "no" thì result = yes do không tìm thấy keyword hoặc intent = polite
-    if (item["searchInvalidKeyword"]["decision"]) == "no":
-        result.append({
-            "type": "case không vi phạm",
-            "file_name": item["fileName"],
-            "result": "Yes"
-        })
-    else:
-      for entry in data:
-        bucket_or_region = entry.get("BUCKET_OR_REGION")
-        text = " ".join([item["text"] for item in entry["context_analysis"]["searchInvalidKeyword"]])
-
-        match_found = False
-        invalid_keyword = ""
-        for bucket in kw:
-          if bucket["bucket"] == bucket_or_region:
+    bucket_or_region = item.get("BUCKET_OR_REGION")
+    text = " ".join([i["text"] for i in item["context_analysis"]["searchInvalidKeyword"]])
+    match_found = False
+    invalid_keyword = ""
+    for bucket in kw:
+        if bucket["bucket"] == bucket_or_region:
             for keyword in sorted(bucket["items"], key=len, reverse=True):
-              if re.search(r'\b' + re.escape(keyword) + r'\b', text):
-                match_found = True
-                invalid_keyword = keyword
-                break
-          if match_found:
+                if re.search(r'\b' + re.escape(keyword) + r'\b', text):
+                    match_found = True
+                    invalid_keyword = keyword
+                    break
+        if match_found:
             break
-
-        result.append({
-          "fileName": entry["fileName"],
-          "result": "No" if match_found else "Yes",
-          "invalid_keyword": invalid_keyword if match_found else None
-        })
+    result.append({
+        "file_name": item["fileName"],
+        "result": "No" if match_found else "Yes",
+        "invalid_keyword": invalid_keyword if match_found else None
+    })
 
 print(result)
