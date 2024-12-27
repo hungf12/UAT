@@ -1,50 +1,17 @@
 import re
 data = [{
-        "fileName": "B5D5P6L9J574P8VDBK9LQG9Q9C2H4HE7.mp3",
+        "fileName": "B5D5P6L9J574P8VDBK9LQG9Q9C264LMJ.mp3",
         "agentChannel": 1,
-        "time_load_info": 0.00445556640625,
+        "time_load_info": 0.00420379638671875,
         "criterias_order": [],
         "context_analysis": {
             "searchInvalidKeyword": [
                 {
-                    "raw_text": "tại vì 1000000",
+                    "raw_text": "thôi được rồi chị để ghi nhận lại nha bất chửi đi",
                     "keywords": [],
-                    "index": 0,
+                    "index": 8,
                     "channel": 1,
-                    "text": "tại vì 1000000 chưa nè à mình bình đằng phải không",
-                    "intent": "impolite",
-                    "intents": [
-                        "impolite"
-                    ]
-                },
-                {
-                    "raw_text": "không có coi gu ít được đâu",
-                    "keywords": [],
-                    "index": 11,
-                    "channel": 1,
-                    "text": "dạ dạ ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không",
-                    "intent": "impolite",
-                    "intents": [
-                        "impolite"
-                    ]
-                },
-                {
-                    "raw_text": "đâu ta ừ",
-                    "keywords": [],
-                    "index": 12,
-                    "channel": 1,
-                    "text": "ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ",
-                    "intent": "impolite",
-                    "intents": [
-                        "impolite"
-                    ]
-                },
-                {
-                    "raw_text": "chị nguyễn kiệm đúng không",
-                    "keywords": [],
-                    "index": 13,
-                    "channel": 1,
-                    "text": "không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ nha à đó tháng đúng không tháng chưa",
+                    "text": "ủa chị ơi nói nghe nè người ta biết nhầm số rồi gọi chị cho châu chị làm gì đúng không không ai 1 ngày gọi cho chị chục cuộc hết á chị thôi được rồi chị để ghi nhận lại nha bất chửi đi",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
@@ -60,44 +27,11 @@ data = [{
             },
             "decision_position": [
                 {
-                    "raw_text": "tại vì 1000000",
+                    "raw_text": "thôi được rồi chị để ghi nhận lại nha bất chửi đi",
                     "keywords": [],
-                    "index": 0,
+                    "index": 8,
                     "channel": 1,
-                    "text": "tại vì 1000000 chưa nè à mình bình đằng phải không",
-                    "intent": "impolite",
-                    "intents": [
-                        "impolite"
-                    ]
-                },
-                {
-                    "raw_text": "không có coi gu ít được đâu",
-                    "keywords": [],
-                    "index": 11,
-                    "channel": 1,
-                    "text": "dạ dạ ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không",
-                    "intent": "impolite",
-                    "intents": [
-                        "impolite"
-                    ]
-                },
-                {
-                    "raw_text": "đâu ta ừ",
-                    "keywords": [],
-                    "index": 12,
-                    "channel": 1,
-                    "text": "ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ",
-                    "intent": "impolite",
-                    "intents": [
-                        "impolite"
-                    ]
-                },
-                {
-                    "raw_text": "chị nguyễn kiệm đúng không",
-                    "keywords": [],
-                    "index": 13,
-                    "channel": 1,
-                    "text": "không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ nha à đó tháng đúng không tháng chưa",
+                    "text": "ủa chị ơi nói nghe nè người ta biết nhầm số rồi gọi chị cho châu chị làm gì đúng không không ai 1 ngày gọi cho chị chục cuộc hết á chị thôi được rồi chị để ghi nhận lại nha bất chửi đi",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
@@ -112,44 +46,11 @@ data = [{
             },
             "position": [
                 {
-                    "raw_text": "tại vì 1000000",
+                    "raw_text": "thôi được rồi chị để ghi nhận lại nha bất chửi đi",
                     "keywords": [],
-                    "index": 0,
+                    "index": 8,
                     "channel": 1,
-                    "text": "tại vì 1000000 chưa nè à mình bình đằng phải không",
-                    "intent": "impolite",
-                    "intents": [
-                        "impolite"
-                    ]
-                },
-                {
-                    "raw_text": "không có coi gu ít được đâu",
-                    "keywords": [],
-                    "index": 11,
-                    "channel": 1,
-                    "text": "dạ dạ ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không",
-                    "intent": "impolite",
-                    "intents": [
-                        "impolite"
-                    ]
-                },
-                {
-                    "raw_text": "đâu ta ừ",
-                    "keywords": [],
-                    "index": 12,
-                    "channel": 1,
-                    "text": "ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ",
-                    "intent": "impolite",
-                    "intents": [
-                        "impolite"
-                    ]
-                },
-                {
-                    "raw_text": "chị nguyễn kiệm đúng không",
-                    "keywords": [],
-                    "index": 13,
-                    "channel": 1,
-                    "text": "không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ nha à đó tháng đúng không tháng chưa",
+                    "text": "ủa chị ơi nói nghe nè người ta biết nhầm số rồi gọi chị cho châu chị làm gì đúng không không ai 1 ngày gọi cho chị chục cuộc hết á chị thôi được rồi chị để ghi nhận lại nha bất chửi đi",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
@@ -6463,14 +6364,14 @@ for item in data:
     else:
       for entry in data:
         bucket_or_region = entry.get("BUCKET_OR_REGION")
-        text = " ".join([item["text"] for item in entry["context_analysis"]["searchInvalidKeyword"]])
+        raw_text = " ".join([item["raw_text"] for item in entry["context_analysis"]["searchInvalidKeyword"]])
 
         match_found = False
         invalid_keyword = ""
         for bucket in kw:
           if bucket["bucket"] == bucket_or_region:
             for keyword in sorted(bucket["items"], key=len, reverse=True):
-              if re.search(r'\b' + re.escape(keyword) + r'\b', text):
+              if re.search(r'\b' + re.escape(keyword) + r'\b', raw_text):
                 match_found = True
                 invalid_keyword = keyword
                 break
