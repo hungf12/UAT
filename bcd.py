@@ -241,11 +241,180 @@ import  math
 #
 # print(price)
 
-#tìm số chia hết cho 3
-a = int(input())
-for i in range(1, a+1):
-    if i % 3 == 0:
-        print(i)
+# #tìm số chia hết cho 3
+# a = int(input())
+# for i in range(1, a+1):
+#     if i % 3 == 0:
+#         count = i // 3
+# print(count)
 
+#tính tổng sổ chẵn
+# a = int(input())
+# b = []
+# for i in range(1, a+1):
+#     if i % 2 == 0:
+#         b.append(i)
+# result = sum(b)
+# print(result)
 
+# #tính tổng các số chia hết cho 3 và 5 & 3 hoặc 5
+# a = int(input())
+# b = []
+# for i in range(1, a +1):
+#     if i % 3 ==0 or i % 5 == 0:
+#         b.append(i)
+# result = sum(b)
+# print(result)
 
+# #đếm n có bao nhiêu ước
+# a = int(input())
+# dem = 0
+# for i in range(1, a+1):
+#     if a % i == 0:
+#         dem += 1
+# print(dem)
+
+#kiểm tra số nguyên tố
+# a = int(input())
+# dem = 0
+# for i in range (1, a+1):
+#     if a % i ==0:
+#         dem += 1
+# if dem == 2:
+#     print(f"Yes")
+# else:
+#     print(f"No")
+
+#tính tổng các số từ a đén b
+# a = int(input())
+# b = int(input())
+# m, n = map(int, input("").split())
+# c = []
+# if m < n:
+#     for i in range(m, n+1):
+#         c.append(i)
+# result = sum(c)
+# print(result)
+
+#đếm số chia hết cho 3 trong khoảng từ m đến n
+# m, n = map(int, input("").split())
+# dem = 0
+# if m < n:
+#     for i in range(m, n+1):
+#         if i % 3 == 0:
+#             dem += 1
+# print(dem)
+
+# # đếm số chia hết cho 3 hoặc 5 và tính tổng các số chắn
+# m, n = map(int, input("").split())
+# dem = 0
+# c = []
+# if m < n:
+#     for i in range(m, n+1):
+#         if i % 3 == 0 or i % 5 == 0:
+#             dem += 1
+#         if i % 2 == 0:
+#             c.append(i)
+# result = sum(c)
+# print(f"{dem} {result}")
+
+#đếm số nguyên tố từ m đến n
+# def so_nguyen_to(a):
+#     if a < 2:
+#         return False
+#     for i in range(2, int(math.sqrt(a))+1):
+#         if a % i == 0:
+#             return False
+#     return True
+#
+#
+# m, n = map(int, input("").split())
+# dem = 0
+# for i in range(m, n+1):
+#     if so_nguyen_to(i):
+#         dem += 1
+# print(dem)
+
+#in các số nguyên tố trong đoạn m đến n
+# def so_nguyen_to(a):
+#     if a < 2:
+#         return False
+#     for i in range(2, int(math.sqrt(a))+1):
+#         if a % i == 0:
+#             return False
+#     return True
+#
+#
+# m, n = map(int, input("").split())
+# dem = 0
+# c = []
+# for i in range(m, n+1):
+#     if so_nguyen_to(i):
+#         c.append(i)
+# print(" ".join(map(str, c)))
+
+#tính trung bình cộng các số nguyên tố
+# def so_nguyen_to(a):
+#     if a < 2:
+#         return False
+#     for i in range(2, int(math.sqrt(a))+1):
+#         if a % i == 0:
+#             return False
+#     return True
+#
+#
+# m, n = map(int, input("").split())
+# dem = 0
+# c = []
+# for i in range(m, n+1):
+#     if so_nguyen_to(i):
+#         dem += 1
+#         c.append(i)
+# result = sum(c)
+# avg = result / dem
+# round_avg = round(avg, 2)
+# print(round_avg)
+
+#tìm UCLN của s số a và b
+# a, b = map(int, input("").split())
+# while b != 0:
+#     a, b = b, a % b
+# print(abs(a))
+
+#rút gon phân số
+# def rut_gon (a, b):
+#     def tim_ucln(x, y):
+#         while y:
+#             x, y = y, x % y
+#         return x
+#     ucln = tim_ucln(a, b)
+#     a = a // ucln
+#     b = b // ucln
+#     return a, b
+#
+# a, b = map(int, input("").split())
+# tu, mau = rut_gon(a, b)
+# print(f"{tu}/{mau}")
+
+#in ra n số nguyên tố
+import math
+
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(math.sqrt(num)) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+k = int(input())
+count = 0
+n = 2      
+prime_numbers = []
+while count < k:
+    if is_prime(n):
+        prime_numbers.append(n)
+        count += 1
+    n += 1
+
+print(f"{' '.join(map(str, prime_numbers))}")
