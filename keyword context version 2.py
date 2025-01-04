@@ -1,50 +1,50 @@
 import re
 data = [{
-        "fileName": "B5D5P6L9J574P8VDBK9LQG9Q9C2H4HE7.mp3",
+        "fileName": "LRBF066NHP1PPCOHJSQDGTI2OG0L3F9F.mp3",
         "agentChannel": 1,
-        "time_load_info": 0.00445556640625,
+        "time_load_info": 0.005803346633911133,
         "criterias_order": [],
         "context_analysis": {
             "searchInvalidKeyword": [
                 {
-                    "raw_text": "tại vì 1000000",
+                    "raw_text": "dạ chị đóng tiền chưa chị minh",
                     "keywords": [],
                     "index": 0,
                     "channel": 1,
-                    "text": "tại vì 1000000 chưa nè à mình bình đằng phải không",
+                    "text": "dạ chị đóng tiền chưa chị minh trời giờ 5 giờ chạy 5 giờ giờ rồi ra chạy ra đóng liền giùm em cái đi",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
                     ]
                 },
                 {
-                    "raw_text": "không có coi gu ít được đâu",
+                    "raw_text": "vậy sao chị không đóng chị cứ nói với em để chị nhờ người này nhờ người kia em kêu chị xuống thu bây giờ chị hỏi chị",
                     "keywords": [],
-                    "index": 11,
+                    "index": 14,
                     "channel": 1,
-                    "text": "dạ dạ ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không",
+                    "text": "cái này em thấy là chị không muốn đóng hay sao á thà chị nói thẳng với em luôn đi nói thẳng đại đi ừ vậy sao chị không đóng chị cứ nói với em để chị nhờ người này nhờ người kia em kêu chị xuống thu bây giờ chị hỏi chị rồi bây giờ chị mấy giờ chị ra chị đóng nè hôm nay là ngày 30 của tháng 11 cuối tháng em mới hỏi tranh thủ giùm em đóng trước",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
                     ]
                 },
                 {
-                    "raw_text": "đâu ta ừ",
+                    "raw_text": "3 giờ 4 giờ rồi bây giờ là chị chị đóng",
                     "keywords": [],
-                    "index": 12,
+                    "index": 20,
                     "channel": 1,
-                    "text": "ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ",
+                    "text": "rồi bây giờ chị mấy giờ chị ra chị đóng nè hôm nay là ngày 30 của tháng 11 cuối tháng em mới hỏi tranh thủ giùm em đóng trước 3 giờ 4 giờ rồi bây giờ là chị chị đóng chị đóng chưa chị chạy ra chị đóng chưa trời ơi ủa chị ơi tại sao chị không rành 1 chút thời gian chị chạy ra chị đóng là xong rồi",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
                     ]
                 },
                 {
-                    "raw_text": "chị nguyễn kiệm đúng không",
+                    "raw_text": "sao mà sáng sớm chị không đi đi tới đợi tới gần phút chó cái chị nói vậy chị làm khó em không",
                     "keywords": [],
-                    "index": 13,
+                    "index": 27,
                     "channel": 1,
-                    "text": "không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ nha à đó tháng đúng không tháng chưa",
+                    "text": "mấy giờ chị về sao mà sáng sớm chị không đi đi tới đợi tới gần phút chó cái chị nói vậy chị làm khó em không",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
@@ -60,44 +60,44 @@ data = [{
             },
             "decision_position": [
                 {
-                    "raw_text": "tại vì 1000000",
+                    "raw_text": "dạ chị đóng tiền chưa chị minh",
                     "keywords": [],
                     "index": 0,
                     "channel": 1,
-                    "text": "tại vì 1000000 chưa nè à mình bình đằng phải không",
+                    "text": "dạ chị đóng tiền chưa chị minh trời giờ 5 giờ chạy 5 giờ giờ rồi ra chạy ra đóng liền giùm em cái đi",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
                     ]
                 },
                 {
-                    "raw_text": "không có coi gu ít được đâu",
+                    "raw_text": "vậy sao chị không đóng chị cứ nói với em để chị nhờ người này nhờ người kia em kêu chị xuống thu bây giờ chị hỏi chị",
                     "keywords": [],
-                    "index": 11,
+                    "index": 14,
                     "channel": 1,
-                    "text": "dạ dạ ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không",
+                    "text": "cái này em thấy là chị không muốn đóng hay sao á thà chị nói thẳng với em luôn đi nói thẳng đại đi ừ vậy sao chị không đóng chị cứ nói với em để chị nhờ người này nhờ người kia em kêu chị xuống thu bây giờ chị hỏi chị rồi bây giờ chị mấy giờ chị ra chị đóng nè hôm nay là ngày 30 của tháng 11 cuối tháng em mới hỏi tranh thủ giùm em đóng trước",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
                     ]
                 },
                 {
-                    "raw_text": "đâu ta ừ",
+                    "raw_text": "3 giờ 4 giờ rồi bây giờ là chị chị đóng",
                     "keywords": [],
-                    "index": 12,
+                    "index": 20,
                     "channel": 1,
-                    "text": "ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ",
+                    "text": "rồi bây giờ chị mấy giờ chị ra chị đóng nè hôm nay là ngày 30 của tháng 11 cuối tháng em mới hỏi tranh thủ giùm em đóng trước 3 giờ 4 giờ rồi bây giờ là chị chị đóng chị đóng chưa chị chạy ra chị đóng chưa trời ơi ủa chị ơi tại sao chị không rành 1 chút thời gian chị chạy ra chị đóng là xong rồi",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
                     ]
                 },
                 {
-                    "raw_text": "chị nguyễn kiệm đúng không",
+                    "raw_text": "sao mà sáng sớm chị không đi đi tới đợi tới gần phút chó cái chị nói vậy chị làm khó em không",
                     "keywords": [],
-                    "index": 13,
+                    "index": 27,
                     "channel": 1,
-                    "text": "không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ nha à đó tháng đúng không tháng chưa",
+                    "text": "mấy giờ chị về sao mà sáng sớm chị không đi đi tới đợi tới gần phút chó cái chị nói vậy chị làm khó em không",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
@@ -112,44 +112,44 @@ data = [{
             },
             "position": [
                 {
-                    "raw_text": "tại vì 1000000",
+                    "raw_text": "dạ chị đóng tiền chưa chị minh",
                     "keywords": [],
                     "index": 0,
                     "channel": 1,
-                    "text": "tại vì 1000000 chưa nè à mình bình đằng phải không",
+                    "text": "dạ chị đóng tiền chưa chị minh trời giờ 5 giờ chạy 5 giờ giờ rồi ra chạy ra đóng liền giùm em cái đi",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
                     ]
                 },
                 {
-                    "raw_text": "không có coi gu ít được đâu",
+                    "raw_text": "vậy sao chị không đóng chị cứ nói với em để chị nhờ người này nhờ người kia em kêu chị xuống thu bây giờ chị hỏi chị",
                     "keywords": [],
-                    "index": 11,
+                    "index": 14,
                     "channel": 1,
-                    "text": "dạ dạ ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không",
+                    "text": "cái này em thấy là chị không muốn đóng hay sao á thà chị nói thẳng với em luôn đi nói thẳng đại đi ừ vậy sao chị không đóng chị cứ nói với em để chị nhờ người này nhờ người kia em kêu chị xuống thu bây giờ chị hỏi chị rồi bây giờ chị mấy giờ chị ra chị đóng nè hôm nay là ngày 30 của tháng 11 cuối tháng em mới hỏi tranh thủ giùm em đóng trước",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
                     ]
                 },
                 {
-                    "raw_text": "đâu ta ừ",
+                    "raw_text": "3 giờ 4 giờ rồi bây giờ là chị chị đóng",
                     "keywords": [],
-                    "index": 12,
+                    "index": 20,
                     "channel": 1,
-                    "text": "ừ lấy cái này sim này lấy không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ",
+                    "text": "rồi bây giờ chị mấy giờ chị ra chị đóng nè hôm nay là ngày 30 của tháng 11 cuối tháng em mới hỏi tranh thủ giùm em đóng trước 3 giờ 4 giờ rồi bây giờ là chị chị đóng chị đóng chưa chị chạy ra chị đóng chưa trời ơi ủa chị ơi tại sao chị không rành 1 chút thời gian chị chạy ra chị đóng là xong rồi",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
                     ]
                 },
                 {
-                    "raw_text": "chị nguyễn kiệm đúng không",
+                    "raw_text": "sao mà sáng sớm chị không đi đi tới đợi tới gần phút chó cái chị nói vậy chị làm khó em không",
                     "keywords": [],
-                    "index": 13,
+                    "index": 27,
                     "channel": 1,
-                    "text": "không có coi gu ít được đâu đâu ta ừ chị nguyễn kiệm đúng không mai bạch đăng đúng không ừ à đang trễ nha à đó tháng đúng không tháng chưa",
+                    "text": "mấy giờ chị về sao mà sáng sớm chị không đi đi tới đợi tới gần phút chó cái chị nói vậy chị làm khó em không",
                     "intent": "impolite",
                     "intents": [
                         "impolite"
@@ -161,7 +161,7 @@ data = [{
             "position_condition": [],
             "task": "context_analysis"
         },
-        "BUCKET_OR_REGION": "B1 NEW"
+        "BUCKET_OR_REGION": "B4B6"
     },]
 
 kw = [
